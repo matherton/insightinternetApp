@@ -15,6 +15,19 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* AI colour pallete */
+  /* Primary Colors */
+  --primary-navy: #003366;
+  --primary-sky: #66ccff;
+
+  /* Secondary Colors */
+  --secondary-light-gray: #f2f2f2;
+  --secondary-dark-gray: #333333;
+
+  /* Accent Colors */
+  --accent-green: #66ff66;
+  --accent-orange: #ff6600;
 }
 
 img.logo {
