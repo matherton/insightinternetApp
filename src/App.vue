@@ -7,7 +7,7 @@ import "./style.css";
 <template>
   <Header />
   <br />
-  <div className="grid grid-cols-2 gap-4">
+  <div class="grid grid-cols-2 gap-4">
     <div>01</div>
     <div>02</div>
     <div>03</div>
