@@ -6,7 +6,7 @@ defineProps({
 </script>
 <!-- TODO: gridColLG prop display corectly in tags but not correctly in the class??? -->
 <template lang="">
-  <div
+  <main
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-{{gridColLG}} gap-4"
   >
     <div>{{ myName }}</div>
@@ -17,7 +17,7 @@ defineProps({
     <div>02</div>
     <div>03</div>
     <div>04</div>
-  </div>
+  </main>
 </template>
 <script>
 export default {

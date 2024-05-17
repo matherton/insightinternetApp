@@ -30,6 +30,11 @@
   --accent-orange: #ff6600;
 }
 
+#app main {
+  min-height: 50%;
+  min-height: 50vh; /* Fallback for browsers do NOT support vh unit */
+}
+
 img.logo {
   width: 125px;
   height: 125px;
