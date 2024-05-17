@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white dark:bg-gray-900">
+  <footer class="bg-teal-500 dark:bg-gray-900">
     <div
       class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
     >
