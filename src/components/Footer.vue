@@ -345,7 +345,7 @@
         </div>
       </div>
 
-      <p class="text-xs text-gray-500 dark:text-gray-400">
+      <p class="text-xs text-white">
         &copy; 2022. Company Name. All rights reserved.
       </p>
     </div>
