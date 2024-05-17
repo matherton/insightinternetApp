@@ -185,7 +185,7 @@
           class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
         >
           <div>
-            <p class="font-medium text-gray-900 dark:text-white">Services</p>
+            <p class="font-medium text-white">Home</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -218,7 +218,7 @@
               <li>
                 <a
                   href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  class="text-gray-700 transition hover:opacity-75 text-white"
                 >
                   HR Consulting
                 </a>
@@ -236,7 +236,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-gray-900 dark:text-white">Company</p>
+            <p class="font-medium text-white">Services</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -269,9 +269,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-gray-900 dark:text-white">
-              Helpful Links
-            </p>
+            <p class="font-medium text-white">About</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
@@ -304,7 +302,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-gray-900 dark:text-white">Legal</p>
+            <p class="font-medium text-white">Contact</p>
 
             <ul class="mt-6 space-y-4 text-sm">
               <li>
