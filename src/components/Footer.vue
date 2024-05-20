@@ -1,20 +1,20 @@
 <template>
-  <footer class="bg-teal-500 dark:bg-gray-900">
+  <footer class="bg-gray-700">
     <div
       class="mx-auto max-w-screen-xl space-y-8 px-4 py-8 sm:px-6 lg:space-y-16 lg:px-8"
     >
-      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 mb-4">
         <div>
-          <div class="text-teal-600 dark:text-teal-300">
+          <!-- <div class="text-teal-600 dark:text-teal-300">
             <img
               src="../assets/II-logo-clean.png"
               alt=""
               width="170"
               height="170"
             />
-          </div>
+          </div> -->
 
-          <ul class="mt-8 flex gap-6">
+          <ul class="flex gap-6">
             <li>
               <a
                 href="#"
@@ -139,169 +139,43 @@
           class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
         >
           <div>
-            <p class="font-medium text-white">Home</p>
-
-            <ul class="mt-6 space-y-4 text-sm">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  1on1 Coaching
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Company Review
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Accounts Review
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 text-white"
-                >
-                  HR Consulting
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  SEO Optimisation
-                </a>
-              </li>
-            </ul>
+            <a
+              href="#"
+              class="font-medium text-gray-700 transition hover:opacity-75 text-white"
+            >
+              Home
+            </a>
           </div>
 
           <div>
-            <p class="font-medium text-white">Services</p>
-
-            <ul class="mt-6 space-y-4 text-sm">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Meet the Team
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Accounts Review
-                </a>
-              </li>
-            </ul>
+            <a
+              href="#"
+              class="font-medium text-gray-700 transition hover:opacity-75 text-white"
+              >Services</a
+            >
           </div>
 
           <div>
-            <p class="font-medium text-white">About</p>
-
-            <ul class="mt-6 space-y-4 text-sm">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Contact
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  FAQs
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Live Chat
-                </a>
-              </li>
-            </ul>
+            <a
+              href="#"
+              class="font-medium text-gray-700 transition hover:opacity-75 text-white"
+              >About</a
+            >
           </div>
 
           <div>
-            <p class="font-medium text-white">Contact</p>
-
-            <ul class="mt-6 space-y-4 text-sm">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Accessibility
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Returns Policy
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Refund Policy
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                >
-                  Hiring Statistics
-                </a>
-              </li>
-            </ul>
+            <a
+              href="#"
+              class="font-medium text-gray-700 transition hover:opacity-75 text-white"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
 
-      <p class="text-xs text-white">
+      <span class="text-xs text-white mt-8">
         &copy; 2024. Company Name. All rights reserved.
-      </p>
+      </span>
     </div>
   </footer>
 </template>
