@@ -5,15 +5,6 @@
     >
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 mb-4">
         <div>
-          <!-- <div class="text-teal-600 dark:text-teal-300">
-            <img
-              src="../assets/II-logo-clean.png"
-              alt=""
-              width="170"
-              height="170"
-            />
-          </div> -->
-
           <ul class="flex gap-6">
             <li>
               <a
