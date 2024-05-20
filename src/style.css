@@ -30,6 +30,36 @@
   --accent-orange: #ff6600;
 }
 
+.header,
+.footer {
+  background-color: var(--primary-navy);
+  color: white;
+}
+
+.button-primary {
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  border: 1px solid white;
+}
+.button-primary:hover {
+  color: var(--primary-navy);
+  background-color: var(--secondary-light-gray);
+  border: 1px solid white;
+}
+
+.button-secondary {
+  background-color: var(--accent-green);
+  color: white;
+}
+
+.button-accent {
+  background-color: var(--accent-orange);
+  color: white;
+}
+
 #app main {
   min-height: 50%;
   min-height: 50vh; /* Fallback for browsers do NOT support vh unit */
@@ -52,10 +82,12 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  text-decoration: underline;
 }
 
 body {
+  background-color: var(--secondary-light-gray);
+  color: var(--secondary-dark-gray);
   margin: 0;
   display: flex;
   place-items: center;
@@ -99,7 +131,7 @@ button:focus-visible {
   text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -110,4 +142,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
