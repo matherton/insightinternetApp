@@ -8,7 +8,7 @@ defineProps({
 <template>
   <header class="header sticky-top">
     <nav class="flex items-center justify-between flex-wrap header p-6">
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <div class="flex items-center flex-shrink-0 text-white">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img src="/src/assets/globe-icon.gif" alt="" />
           <span class="font-semibold text-xl tracking-tight pl-2"
@@ -33,7 +33,7 @@ defineProps({
         </button>
       </div> -->
       <div
-        class="w-full block flex-grow pt-4 xs:pt-4 sm:pt-4 md:pt-4 lg:flex lg:items-center lg:w-auto"
+        class="w-full block flex-grow pt-4 lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
           <a href="#responsive-header" class="button-primary px-4 py-2 mr-2"
@@ -60,10 +60,14 @@ defineProps({
 </template>
 
 <style scoped>
-/* Only way I could find to overwrite Tailwind so the nav would remove the margin right on smaller screens */
+/* Only way I could find to overwrite Tailwind so the nav would remove the margin right on smaller screens 
+andto remove the padding top on larger screens */
 @media (min-width: 1024px) {
   .button-primary {
     margin-right: 10%;
+  }
+  .flex-grow.pt-4 {
+    padding-top: 0;
   }
 }
 </style>

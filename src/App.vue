@@ -17,9 +17,9 @@ defineProps({
 
 <template>
   <Header />
-  <br />
+
   <Page myName="Mark" :gridColMD="3" :gridColLG="4" />
-  <br />
+
   <Footer />
 </template>
 
