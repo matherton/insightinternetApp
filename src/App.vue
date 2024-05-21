@@ -4,8 +4,6 @@ import Page from "./components/Page.vue";
 import Footer from "./components/Footer.vue";
 import "./style.css";
 
-import { defineProps } from "vue";
-
 defineProps({
   myName: {
     type: String,
@@ -20,7 +18,7 @@ defineProps({
 <template>
   <Header />
   <br />
-  <Page myName="Mark" :gridColLG="2" />
+  <Page myName="Mark" :gridColMD="3" :gridColLG="4" />
   <br />
   <Footer />
 </template>
