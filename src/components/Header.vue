@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <header>
+  <header class="header sticky-top">
     <nav class="flex items-center justify-between flex-wrap header p-6">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -35,9 +35,15 @@ defineProps({
         class="w-full block flex-grow pt-4 xs:pt-4 sm:pt-4 md:pt-4 lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
-          <a href="#responsive-header" class="button-primary">Home</a>
-          <a href="#responsive-header" class="button-primary">Services</a>
-          <a href="#responsive-header" class="button-primary">About</a>
+          <a href="#responsive-header" class="button-primary px-4 py-2 mr-2"
+            >Home</a
+          >
+          <a href="#responsive-header" class="button-primary px-4 py-2 mr-2"
+            >Services</a
+          >
+          <a href="#responsive-header" class="button-primary px-4 py-2 mr-2"
+            >About</a
+          >
         </div>
         <div>
           <a
@@ -50,3 +56,12 @@ defineProps({
     </nav>
   </header>
 </template>
+
+<style scoped>
+/* Only way I could find to overwrite Tailwind so the nav would remove the margin right on smaller screens */
+@media (min-width: 768px) {
+  .button-primary {
+    margin-right: 10%;
+  }
+}
+</style>
