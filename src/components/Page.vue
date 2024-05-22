@@ -16,7 +16,7 @@ import BulletListVue from "./utilities/BulletList.vue";
       <p>{{ copy1 }}</p>
     </section>
     <section>
-      <img :src="`/src/assets/${imgName}.png`" class="mx-auto" alt="" />
+      <img :src="`/src/assets/${imgName}.png`" class="mx-auto mt-16" alt="" />
     </section>
 
     <section>
