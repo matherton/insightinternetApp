@@ -1,7 +1,5 @@
-<template lang="vue">
-<div>
-    About content
-</div>
+<template>
+  <div>About content</div>
 </template>
 <script>
 export default {

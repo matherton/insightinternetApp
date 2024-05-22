@@ -1,7 +1,5 @@
-<template lang="vue">
-<div>
-        Services content
-    </div>
+<template>
+  <div>Services content</div>
 </template>
 <script>
 export default {

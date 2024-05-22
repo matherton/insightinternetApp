@@ -17,8 +17,8 @@ defineProps({
 
 <template>
   <Header />
-
-  <Page myName="Mark" :gridColMD="3" :gridColLG="4" />
+  <RouterView />
+  <!-- <Page myName="Mark" :gridColMD="3" :gridColLG="4" /> -->
 
   <Footer />
 </template>
