@@ -4,7 +4,7 @@
   >
     <div>{{ copy1 }}</div>
     <div>
-      <img :src="`/src/assets/${imgName}.png`" class="w-1/4 mx-auto" alt="" />
+      <img :src="`/src/assets/${imgName}.png`" class="w-1/2 mx-auto" alt="" />
     </div>
     <div>{{ copy2 }}</div>
     <div>04</div>

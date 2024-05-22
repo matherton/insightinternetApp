@@ -30,8 +30,6 @@ defineProps({
 <template>
   <Header />
   <RouterView />
-  <!-- <Page copy2="Mark" :gridColMD="3" :gridColLG="4" /> -->
-
   <Footer />
 </template>
 
