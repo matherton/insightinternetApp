@@ -37,6 +37,14 @@ defineProps({
     type: String,
     default: "",
   },
+  copy3: {
+    type: String,
+    default: "",
+  },
+  subTitle4: {
+    type: String,
+    default: "",
+  },
   gridColMD: {
     type: Number,
     default: 2,

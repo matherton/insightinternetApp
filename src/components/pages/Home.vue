@@ -13,6 +13,7 @@ import Page from "../Page.vue";
     copy2="InsightInternet was founded with a vision to support startups by providing top-notch React applications. Based in Edinburgh and partnering with Edinburgh Startups and small businesses, we leverage the latest technologies to create seamless, responsive, and scalable applications."
     subTitle3="Mission Statement"
     copy3="Our mission is to empower startups with robust and scalable React applications, ensuring they have the technological edge to succeed in a competitive market"
+    subTitle4="Values"
     :gridColMD="3"
     :gridColLG="3"
   />

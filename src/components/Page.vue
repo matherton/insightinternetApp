@@ -23,8 +23,12 @@ import BulletListVue from "./utilities/BulletList.vue";
       <h2>{{ title2 }}</h2>
       <strong>{{ subTitle2 }}</strong>
       <p>{{ copy2 }}</p>
+
       <strong>{{ subTitle3 }}</strong>
-      <div v-if="subTitle3">
+      <p>{{ copy3 }}</p>
+
+      <strong>{{ subTitle4 }}</strong>
+      <div v-if="subTitle4">
         <BulletListVue />
       </div>
     </section>
@@ -42,7 +46,7 @@ p {
 
 button {
   display: block;
-  margin: 0.5rem auto;
+  margin: 1.5rem auto;
 }
 
 button:hover {
@@ -63,6 +67,8 @@ export default {
     copy2: String,
     imgName: String,
     subTitle3: String,
+    copy3: String,
+    subTitle4: String,
     gridColMD: {
       type: Number,
       default: 2,

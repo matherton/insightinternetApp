@@ -1,18 +1,18 @@
+<script setup>
+import { ref } from "vue";
+
+const items = ref(["Innovation", "Quality", "Collaboration", "Integrity"]);
+</script>
+
 <template>
   <ul>
-    <li class="list-decimal">Innovation</li>
-    <li class="list-decimal">Quality</li>
-    <li class="list-decimal">Collaboration</li>
-    <li class="list-decimal">Integrity</li>
+    <li v-for="(item, index) in items" :key="index">{{ item }}</li>
   </ul>
 </template>
-<script>
-export default {
-  name: "BulletList",
-};
-</script>
-<style lang="css">
+
+<style scoped>
 ul {
-  margin-left: 1rem;
+  list-style-type: numeric;
+  list-style-position: inside;
 }
 </style>
