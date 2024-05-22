@@ -5,8 +5,20 @@ import Footer from "./components/Footer.vue";
 import "./style.css";
 
 defineProps({
-  myName: {
+  copy1: {
     type: String,
+  },
+  copy2: {
+    type: String,
+    default: "",
+  },
+  imgName: {
+    type: String,
+    default: "",
+  },
+  gridColMD: {
+    type: Number,
+    default: 2,
   },
   gridColLG: {
     type: Number,
@@ -18,7 +30,7 @@ defineProps({
 <template>
   <Header />
   <RouterView />
-  <!-- <Page myName="Mark" :gridColMD="3" :gridColLG="4" /> -->
+  <!-- <Page copy2="Mark" :gridColMD="3" :gridColLG="4" /> -->
 
   <Footer />
 </template>
