@@ -1,26 +1,68 @@
+<script setup>
+import BulletListVue from "./utilities/BulletList.vue";
+</script>
 <template>
   <main
-    :class="`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-${gridColMD} lg:grid-cols-${gridColLG} gap-4 pt-4`"
+    :class="`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-${gridColMD} lg:grid-cols-${gridColLG} gap-4 pt-4 pr-4 pl-4 pb-4`"
   >
-    <div>{{ copy1 }}</div>
-    <div>
-      <img :src="`/src/assets/${imgName}.png`" class="w-1/2 mx-auto" alt="" />
-    </div>
-    <div>{{ copy2 }}</div>
-    <div>04</div>
-    <div>05</div>
-    <div>{{ gridColLG }}</div>
-    <div>07</div>
-    <div>08</div>
+    <section>
+      <h2>{{ title1 }}</h2>
+      <strong>{{ subTitle1 }}</strong>
+      <button
+        class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      >
+        Get Started
+      </button>
+      <p>{{ copy1 }}</p>
+    </section>
+    <section>
+      <img :src="`/src/assets/${imgName}.png`" class="mx-auto" alt="" />
+    </section>
+
+    <section>
+      <h2>{{ title2 }}</h2>
+      <strong>{{ subTitle2 }}</strong>
+      <p>{{ copy2 }}</p>
+      <strong>{{ subTitle3 }}</strong>
+      <div v-if="subTitle3">
+        <BulletListVue />
+      </div>
+    </section>
   </main>
 </template>
+<style scoped>
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
+p {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+button:hover {
+  color: #fff;
+  background-color: var(--accent-orange);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+</style>
 <script>
 export default {
   props: {
+    title1: String,
+    subTitle1: String,
     copy1: String,
+    title2: String,
+    subTitle2: String,
     copy2: String,
     imgName: String,
+    subTitle3: String,
     gridColMD: {
       type: Number,
       default: 2,

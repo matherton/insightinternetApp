@@ -11,10 +11,10 @@ defineProps({
       <div class="flex items-center flex-shrink-0 text-white">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img src="/src/assets/globe-icon.gif" alt="" />
-          <span class="font-semibold text-xl tracking-tight pl-2"
-            >Insight Internet</span
-          >
-          <sub class="slogan">Invent, Inspire, React</sub>
+          <h1 class="font-semibold text-xl tracking-tight pl-2">
+            Insight Internet
+          </h1>
+          <sub class="slogan">Invent, Implement, React</sub>
         </div>
       </div>
       <!-- 

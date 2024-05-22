@@ -30,10 +30,10 @@
   --accent-orange: #ff6600;
 }
 
-.header,
-.footer {
+.header {
   background-color: var(--primary-navy);
   color: white;
+  text-align: center;
 }
 
 .button-primary {
@@ -128,7 +128,6 @@ button:focus-visible {
   min-height: 80%;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 /* @media (prefers-color-scheme: light) {

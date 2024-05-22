@@ -5,8 +5,29 @@ import Footer from "./components/Footer.vue";
 import "./style.css";
 
 defineProps({
+  title1: {
+    type: String,
+    default: "",
+  },
+  subTitle1: {
+    type: String,
+    default: "",
+  },
   copy1: {
     type: String,
+    default: "",
+  },
+  title2: {
+    type: String,
+    default: "",
+  },
+  subTitle2: {
+    type: String,
+    default: "",
+  },
+  subTitle3: {
+    type: String,
+    default: "",
   },
   copy2: {
     type: String,
