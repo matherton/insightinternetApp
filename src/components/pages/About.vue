@@ -1,9 +1,24 @@
+<script setup>
+import Page from "../Page.vue";
+</script>
+
 <template>
-  <div>About content</div>
+  <Page
+    title1="Why Choose Us"
+    subTitle1="Expertise:"
+    copy1="Insight Internet is highly skilled React development with a wealth of experience in building dynamic and responsive web applications."
+    img2ndCol="II-logo-clean"
+    subTitle2="Collaboration:"
+    copy2="We work closely with our clients to understand their goals and deliver solutions that exceed expectations."
+    subTitle3="Innovation:"
+    copy3="At InsightInternet, we stay at the forefront of technology trends to bring the most advanced solutions to your business."
+    subTitle4="Reliability:"
+    copy4="Depend on us for consistent, high-quality service and ongoing support."
+  />
 </template>
+
 <script>
 export default {
   name: "About",
 };
 </script>
-<style lang=""></style>
