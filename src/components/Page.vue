@@ -9,14 +9,15 @@ import BulletListVue from "./utilities/BulletList.vue";
       <h2>{{ title1 }}</h2>
       <strong>{{ subTitle1 }}</strong>
       <button
+        v-if="btnText"
         class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
       >
-        Get Started
+        {{ btnText }}
       </button>
       <p>{{ copy1 }}</p>
     </section>
     <section>
-      <img :src="`/src/assets/${imgName}.png`" class="mx-auto mt-16" alt="" />
+      <img :src="`/src/assets/${imgName}.png`" class="mx-auto" alt="" />
     </section>
 
     <section>
@@ -58,9 +59,11 @@ button:hover {
 </style>
 <script>
 export default {
+  name: "Page",
   props: {
     title1: String,
     subTitle1: String,
+    btnText: String,
     copy1: String,
     title2: String,
     subTitle2: String,

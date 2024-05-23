@@ -13,6 +13,10 @@ defineProps({
     type: String,
     default: "",
   },
+  btnText: {
+    type: Boolean,
+    default: false,
+  },
   copy1: {
     type: String,
     default: "",
