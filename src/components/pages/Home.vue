@@ -15,6 +15,7 @@ import Page from "../Page.vue";
     subTitle3="Mission Statement"
     copy3="Our mission is to empower startups with robust and scalable React applications, ensuring they have the technological edge to succeed in a competitive market"
     subTitle4="Values"
+    subTitleList
     :gridColMD="3"
     :gridColLG="3"
   />

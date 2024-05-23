@@ -14,13 +14,22 @@ import BulletListVue from "./utilities/BulletList.vue";
       >
         {{ btnText }}
       </button>
-      <p>{{ copy1 }}</p>
+      <p>{{ copy1 }} here</p>
     </section>
-    <section>
+
+    <section v-if="imgName">
       <img :src="`/src/assets/${imgName}.png`" class="mx-auto" alt="" />
     </section>
 
-    <section>
+    <section v-if="img2ndCol">
+      <img
+        :src="`/src/assets/${img2ndCol}.png`"
+        class="mx-auto max-w-40"
+        alt=""
+      />
+    </section>
+
+    <section v-if="subTitleList">
       <h2>{{ title2 }}</h2>
       <strong>{{ subTitle2 }}</strong>
       <p>{{ copy2 }}</p>
@@ -29,9 +38,23 @@ import BulletListVue from "./utilities/BulletList.vue";
       <p>{{ copy3 }}</p>
 
       <strong>{{ subTitle4 }}</strong>
-      <div v-if="subTitle4">
+      <p>{{ copy4 }}</p>
+
+      <div>
         <BulletListVue />
       </div>
+    </section>
+
+    <section v-else>
+      <strong>{{ subTitle2 }}</strong>
+      <p>{{ copy2 }}</p>
+
+      <strong>{{ subTitle3 }}</strong>
+      <p>{{ copy3 }}</p>
+    </section>
+    <section v-if="!subTitleList">
+      <strong>{{ subTitle4 }}</strong>
+      <p>{{ copy4 }}</p>
     </section>
   </main>
 </template>
@@ -72,6 +95,9 @@ export default {
     subTitle3: String,
     copy3: String,
     subTitle4: String,
+    subTitleList: Boolean,
+    img2ndCol: String,
+    copy4: String,
     gridColMD: {
       type: Number,
       default: 2,
