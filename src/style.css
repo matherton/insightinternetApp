@@ -65,27 +65,20 @@
   color: white;
 }
 
-#app main {
-  background: #fff;
-  min-height: 50%;
-  min-height: 50vh; /* Fallback for browsers do NOT support vh unit */
+#app {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* img.logo {
-  width: 125px;
-  height: 125px;
-} */
+#app main {
+  background: #fff;
+}
 
 .slogan {
   position: relative;
   top: 1rem;
   left: -8.2rem;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
 }
 
 body {
@@ -125,10 +118,8 @@ button:focus-visible {
   padding: 2em;
 }
 
-#app {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+footer {
+  border-top: var(--primary-sky) 4px solid;
 }
 
 /* @media (prefers-color-scheme: light) {
