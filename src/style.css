@@ -37,6 +37,10 @@
   border-bottom: 2px solid var(--primary-sky);
 }
 
+#app button:hover {
+  cursor: pointer;
+  border-color: var(--primary-sky);
+}
 .button-primary {
   background-color: transparent;
   color: white;
@@ -48,12 +52,13 @@
 .button-primary:hover {
   color: var(--primary-navy);
   background-color: var(--secondary-light-gray);
-  border: 1px solid white;
+  border: 1px solid var(--primary-sky);
 }
 
 .button-secondary {
   background-color: #fff;
   color: var(--primary-navy);
+  border-radius: 4px;
 }
 
 .button-secondary:hover {
