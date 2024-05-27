@@ -18,15 +18,11 @@ import BulletListVue from "./utilities/BulletList.vue";
     </section>
 
     <section v-if="imgName">
-      <img :src="`/src/assets/${imgName}.png`" class="mx-auto" alt="" />
+      <img :src="`/src/assets/${imgName}`" class="mx-auto" alt="" />
     </section>
 
     <section v-if="img2ndCol">
-      <img
-        :src="`/src/assets/${img2ndCol}.png`"
-        class="mx-auto max-w-40"
-        alt=""
-      />
+      <img :src="`/src/assets/${img2ndCol}`" class="mx-auto max-w-40" alt="" />
     </section>
 
     <section v-if="subTitleList">
