@@ -14,7 +14,7 @@ import BulletListVue from "./utilities/BulletList.vue";
       >
         {{ btnText }}
       </button>
-      <p>{{ copy1 }} here</p>
+      <p>{{ copy1 }}</p>
     </section>
 
     <section v-if="imgName">
