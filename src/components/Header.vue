@@ -28,7 +28,7 @@ defineProps({
         <div>
           <button
             href="#"
-            class="button-secondary px-4 py-2"
+            class="button-secondary px-4 py-2 mt-4 lg:mt-0"
             @click="showModal"
           >
             Contact
