@@ -6,7 +6,7 @@ import Page from "../Page.vue";
   <Page
     title1="Why Choose Us"
     subTitle1="Expertise:"
-    copy1="Insight Internet is highly skilled React development with a wealth of experience in building dynamic and responsive web applications."
+    copy1="Highly skilled React development with a wealth of experience in building dynamic and responsive web applications."
     img2ndCol="II-logo-clean"
     subTitle2="Collaboration:"
     copy2="We work closely with our clients to understand their goals and deliver solutions that exceed expectations."
