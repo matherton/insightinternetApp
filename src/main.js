@@ -20,6 +20,10 @@ const routes = [
     path: "/services",
     component: Services,
   },
+  {
+    path: "/contact",
+    component: Home,
+  },
 ];
 
 const router = createRouter({
