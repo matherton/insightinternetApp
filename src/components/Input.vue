@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: "Input",
   props: {
     id: String,
     labelText: String,
