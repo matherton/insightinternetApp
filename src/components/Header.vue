@@ -10,7 +10,7 @@ defineProps({
     <nav class="flex items-center justify-between flex-wrap header p-6">
       <div class="flex items-center flex-shrink-0 text-white">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <img src="/src/assets/globe-icon.gif" alt="" />
+          <img src="/src/assets/globe-icon.gif" alt="globe" />
           <h1 class="font-semibold text-xl tracking-tight pl-2">
             Insight Internet
           </h1>
