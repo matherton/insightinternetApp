@@ -21,17 +21,23 @@ defineProps({
         class="w-full block flex-grow pt-4 lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
-          <a href="/" class="button-primary px-4 py-2 mr-2">Home</a>
-          <a href="/services" class="button-primary px-4 py-2 mr-2">Services</a>
-          <a href="/about" class="button-primary px-4 py-2 mr-2">About</a>
+          <router-link to="/" class="button-primary px-4 py-2 mr-2"
+            >Home</router-link
+          >
+          <router-link to="/services" class="button-primary px-4 py-2 mr-2"
+            >Services</router-link
+          >
+          <router-link to="/about" class="button-primary px-4 py-2 mr-2"
+            >About</router-link
+          >
         </div>
         <div>
-          <a
-            href="/contact"
+          <router-link
+            to="/contact"
             class="button-secondary px-4 py-2 mt-4 lg:mt-0 mr-2 text-sm"
           >
             Contact
-          </a>
+          </router-link>
         </div>
       </div>
     </nav>
