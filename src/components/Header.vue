@@ -21,19 +21,25 @@ defineProps({
         class="w-full block flex-grow pt-4 lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
-          <router-link to="/" class="button-primary px-4 py-2 mr-2"
+          <router-link
+            to="/insightinternetApp"
+            class="button-primary px-4 py-2 mr-2"
             >Home</router-link
           >
-          <router-link to="/services" class="button-primary px-4 py-2 mr-2"
+          <router-link
+            to="/insightinternetApp/services"
+            class="button-primary px-4 py-2 mr-2"
             >Services</router-link
           >
-          <router-link to="/about" class="button-primary px-4 py-2 mr-2"
+          <router-link
+            to="/insightinternetApp/about"
+            class="button-primary px-4 py-2 mr-2"
             >Why us</router-link
           >
         </div>
         <div>
           <router-link
-            to="/contact"
+            to="/insightinternetApp/contact"
             class="button-secondary px-4 py-2 mt-4 lg:mt-0 mr-2 text-sm"
           >
             Contact

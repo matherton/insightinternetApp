@@ -131,7 +131,7 @@
         >
           <div>
             <router-link
-              to="/"
+              to="/insightinternetApp/"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
             >
               Home
@@ -140,7 +140,7 @@
 
           <div>
             <router-link
-              to="/services"
+              to="/insightinternetApp/services"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
               >Services</router-link
             >
@@ -148,7 +148,7 @@
 
           <div>
             <router-link
-              to="/about"
+              to="/insightinternetApp/about"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
               >Why us</router-link
             >
@@ -156,7 +156,7 @@
 
           <div>
             <router-link
-              to="/contact"
+              to="/insightinternetApp/contact"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
               >Contact
             </router-link>

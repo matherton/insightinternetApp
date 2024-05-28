@@ -10,19 +10,19 @@ import ContactForm from "./components/pages/ContactForm.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/insightinternetApp/",
     component: Home,
   },
   {
-    path: "/about",
+    path: "/insightinternetApp/about",
     component: About,
   },
   {
-    path: "/services",
+    path: "/insightinternetApp/services",
     component: Services,
   },
   {
-    path: "/contact",
+    path: "/insightinternetApp/contact",
     component: ContactForm,
   },
 ];
