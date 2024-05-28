@@ -150,7 +150,7 @@
             <router-link
               to="/about"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
-              >About</router-link
+              >Why us</router-link
             >
           </div>
 

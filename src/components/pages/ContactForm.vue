@@ -24,8 +24,6 @@
             type="text"
             name="first_name"
             id="first_name_field"
-            v-model="first_name"
-            required
           />
         </div>
         <div class="w-1/2">
@@ -37,7 +35,6 @@
             type="text"
             name="last_name"
             id="last_name_field"
-            v-model="last_name"
             required
           />
         </div>
@@ -52,7 +49,6 @@
             type="email"
             name="email"
             id="email_field"
-            v-model="email"
             required
           />
         </div>
@@ -65,7 +61,6 @@
             type="tel"
             name="phone"
             id="phone_field"
-            v-model="phone"
           />
         </div>
       </div>
@@ -79,24 +74,57 @@
           name="message"
           id="message_field"
           rows="6"
-          v-model="message"
           required
         ></textarea>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://yourdomain.co/thanks.html"
+        />
       </div>
       <button
         type="submit"
         class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+        @click="checkFormComplete($event)"
       >
         Send
       </button>
     </form>
+
+    <h2 class="text-2xl text-gray-500 font-semibold mb-2 mt-2">
+      Additional Information:
+    </h2>
+    <p>
+      "Or reach out to me directly at
+      <a href="mailto:mark@insightinternet.co.uk" class="email-link"
+        >mark@insightinternet.co.uk</a
+      >."
+    </p>
   </main>
 </template>
 
 <script>
 export default {
   name: "ContactForm",
-  methods: {},
+  data() {
+    return {
+      formFields: ["last_name", "email", "message"],
+    };
+  },
+  methods: {
+    checkFormComplete(event) {
+      const isFormComplete = this.formFields.every((field) => {
+        return !!document.getElementById(field).value;
+      });
+
+      if (!isFormComplete) {
+        alert("Please fill in all fields!");
+        event.preventDefault();
+      } else {
+        this.$router.push({ name: "home" });
+      }
+    },
+  },
 };
 </script>
 
@@ -114,5 +142,9 @@ form button:hover {
   color: #fff;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.email-link:hover {
+  color: var(--accent-orange);
+  text-decoration: underline;
 }
 </style>

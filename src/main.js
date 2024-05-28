@@ -6,7 +6,7 @@ import App from "./App.vue";
 import About from "./components/pages/About.vue";
 import Home from "./components/pages/Home.vue";
 import Services from "./components/pages/Services.vue";
-import ContactForm from "./components/ContactForm.vue";
+import ContactForm from "./components/pages/ContactForm.vue";
 
 const routes = [
   {

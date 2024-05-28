@@ -1,5 +1,5 @@
 <script setup>
-import ContactForm from "./ContactForm.vue";
+import ContactForm from "./pages/ContactForm.vue";
 defineProps({
   msg: String,
 });
@@ -28,7 +28,7 @@ defineProps({
             >Services</router-link
           >
           <router-link to="/about" class="button-primary px-4 py-2 mr-2"
-            >About</router-link
+            >Why us</router-link
           >
         </div>
         <div>
