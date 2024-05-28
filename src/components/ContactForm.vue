@@ -1,3 +1,5 @@
+<script setup></script>
+
 <template>
   <main class="p-4">
     <h2 class="text-2xl text-gray-500 font-semibold mb-2">Contact Us</h2>
@@ -70,7 +72,7 @@
       </div>
       <button
         type="submit"
-        class="bg-blue-600 py-2 px-4 rounded border-gray-400 shadow-sm text-gray-200 hover:text-white hover:bg-blue-800"
+        class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
       >
         Send
       </button>
@@ -84,4 +86,19 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+form input,
+form textarea {
+  background-color: #66ccff21;
+  padding: 0.25rem 0.5rem;
+}
+form button {
+  background-color: #fff;
+}
+form button:hover {
+  background-color: var(--accent-orange);
+  color: #fff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+</style>
