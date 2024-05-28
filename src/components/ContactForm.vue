@@ -9,7 +9,11 @@
         us today to discuss your project.
       </p>
     </div>
-    <form id="contact_form">
+    <form
+      id="contact_form"
+      action="https://formsubmit.co/mark@insightinternet.co.uk"
+      method="POST"
+    >
       <div class="flex mb-5">
         <div class="w-1/2 mr-2">
           <label for="first_name_field" class="block text-sm text-gray-500"
@@ -20,6 +24,8 @@
             type="text"
             name="first_name"
             id="first_name_field"
+            v-model="first_name"
+            required
           />
         </div>
         <div class="w-1/2">
@@ -31,6 +37,8 @@
             type="text"
             name="last_name"
             id="last_name_field"
+            v-model="last_name"
+            required
           />
         </div>
       </div>
@@ -44,6 +52,8 @@
             type="email"
             name="email"
             id="email_field"
+            v-model="email"
+            required
           />
         </div>
         <div class="w-1/2">
@@ -55,6 +65,7 @@
             type="tel"
             name="phone"
             id="phone_field"
+            v-model="phone"
           />
         </div>
       </div>
@@ -68,6 +79,8 @@
           name="message"
           id="message_field"
           rows="6"
+          v-model="message"
+          required
         ></textarea>
       </div>
       <button
@@ -83,6 +96,7 @@
 <script>
 export default {
   name: "ContactForm",
+  methods: {},
 };
 </script>
 
