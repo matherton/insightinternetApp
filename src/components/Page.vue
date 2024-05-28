@@ -1,6 +1,7 @@
 <script setup>
 import BulletListVue from "./utilities/BulletList.vue";
 </script>
+<!-- TODO put all images in the public folder in order for them to available in dist folder like globe-icon.gif -->
 <template>
   <main
     :class="`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-${gridColMD} lg:grid-cols-${gridColLG} gap-4 pt-4 pr-4 pl-4 pb-4`"
