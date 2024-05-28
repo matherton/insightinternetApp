@@ -84,7 +84,4 @@ export default {
 };
 </script>
 
-<style>
-form {
-}
-</style>
+<style></style>
