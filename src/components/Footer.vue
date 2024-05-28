@@ -130,36 +130,36 @@
           class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
         >
           <div>
-            <a
-              href="#"
+            <router-link
+              to="/"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
             >
               Home
-            </a>
+            </router-link>
           </div>
 
           <div>
-            <a
-              href="#"
+            <router-link
+              to="/services"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
-              >Services</a
+              >Services</router-link
             >
           </div>
 
           <div>
-            <a
-              href="#"
+            <router-link
+              to="/about"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
-              >About</a
+              >About</router-link
             >
           </div>
 
           <div>
-            <a
-              href="#"
+            <router-link
+              to="/contact"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
-              >Contact</a
-            >
+              >Contact
+            </router-link>
           </div>
         </div>
       </div>
