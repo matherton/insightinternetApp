@@ -11,6 +11,7 @@ import BulletListVue from "./utilities/BulletList.vue";
       <button
         v-if="btnText"
         class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+        @click="goToVeiw"
       >
         {{ btnText }}
       </button>
@@ -79,6 +80,11 @@ button:hover {
 <script>
 export default {
   name: "Page",
+  methods: {
+    goToVeiw() {
+      window.location.href = "/contact";
+    },
+  },
   props: {
     title1: String,
     subTitle1: String,
