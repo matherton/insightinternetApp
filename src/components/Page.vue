@@ -24,6 +24,7 @@ import BulletListVue from "./utilities/BulletList.vue";
         :src="`/insightinternetApp/src/assets/${imgName}`"
         class="mx-auto"
         alt=""
+        typr="image"
       />
     </section>
 
@@ -32,6 +33,7 @@ import BulletListVue from "./utilities/BulletList.vue";
         :src="`/insightinternetApp/src/assets/${img2ndCol}`"
         class="mx-auto max-w-40"
         alt=""
+        type="image"
       />
     </section>
 
