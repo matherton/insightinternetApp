@@ -20,12 +20,12 @@ import BulletListVue from "./utilities/BulletList.vue";
     </section>
 
     <section v-if="imgName">
-      <img :src="`./public/${imgName}`" class="mx-auto" alt="" typr="image" />
+      <img :src="`./${imgName}`" class="mx-auto" alt="" typr="image" />
     </section>
 
     <section v-if="img2ndCol">
       <img
-        :src="`./public/${img2ndCol}`"
+        :src="`./${img2ndCol}`"
         class="mx-auto max-w-40"
         alt=""
         type="image"
