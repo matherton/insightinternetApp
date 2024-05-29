@@ -20,17 +20,12 @@ import BulletListVue from "./utilities/BulletList.vue";
     </section>
 
     <section v-if="imgName">
-      <img
-        :src="`/insightinternetApp/src/assets/${imgName}`"
-        class="mx-auto"
-        alt=""
-        typr="image"
-      />
+      <img :src="`./public/${imgName}`" class="mx-auto" alt="" typr="image" />
     </section>
 
     <section v-if="img2ndCol">
       <img
-        :src="`/insightinternetApp/src/assets/${img2ndCol}`"
+        :src="`./public/${img2ndCol}`"
         class="mx-auto max-w-40"
         alt=""
         type="image"
