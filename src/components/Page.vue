@@ -9,13 +9,14 @@ import BulletListVue from "./utilities/BulletList.vue";
     <section>
       <h2>{{ title1 }}</h2>
       <strong>{{ subTitle1 }}</strong>
-      <button
-        v-if="btnText"
-        class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-        @click="goToVeiw"
-      >
-        {{ btnText }}
-      </button>
+      <router-link to="/insightinternetApp/contact">
+        <button
+          v-if="btnText"
+          class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+        >
+          {{ btnText }}
+        </button>
+      </router-link>
       <p>{{ copy1 }}</p>
     </section>
 
@@ -86,11 +87,7 @@ button:hover {
 <script>
 export default {
   name: "Page",
-  methods: {
-    goToVeiw() {
-      window.location.href = "/insightinternetApp/contact";
-    },
-  },
+  methods: {},
   props: {
     title1: String,
     subTitle1: String,
