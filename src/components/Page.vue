@@ -88,7 +88,7 @@ export default {
   name: "Page",
   methods: {
     goToVeiw() {
-      window.location.href = "/insightinternetApp/contact/";
+      window.location.href = "/insightinternetApp/contact";
     },
   },
   props: {
