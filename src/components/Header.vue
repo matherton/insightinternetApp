@@ -22,7 +22,7 @@ defineProps({
       >
         <div class="text-sm lg:flex-grow">
           <router-link
-            to="/insightinternetApp"
+            to="/insightinternetApp/"
             class="button-primary px-4 py-2 mr-2"
             >Home</router-link
           >
