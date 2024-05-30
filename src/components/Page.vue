@@ -59,6 +59,15 @@ import BulletListVue from "./utilities/BulletList.vue";
     <section v-if="!subTitleList">
       <strong>{{ subTitle4 }}</strong>
       <p>{{ copy4 }}</p>
+      <strong>{{ subTitle5 }}</strong>
+      <p>{{ copy5 }}</p>
+      <a href="http://insightinternet.co.uk/portfolio.html" target="_blank">
+        <button
+          class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+        >
+          Portfolio
+        </button>
+      </a>
     </section>
   </main>
 </template>
@@ -100,9 +109,11 @@ export default {
     subTitle3: String,
     copy3: String,
     subTitle4: String,
+    copy4: String,
+    subTitle5: String,
+    copy5: String,
     subTitleList: Boolean,
     img2ndCol: String,
-    copy4: String,
     gridColMD: {
       type: Number,
       default: 2,

@@ -14,6 +14,7 @@ import Page from "../Page.vue";
     copy3="Comprehensive maintenance and support services to ensure your applications run smoothly."
     subTitle4="Consultation:"
     copy4="Expert advice and consultation to help you make informed decisions about your technology stack."
+    subTitle5="Pojects:"
   />
 </template>
 
