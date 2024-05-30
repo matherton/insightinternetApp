@@ -23,24 +23,24 @@ defineProps({
         <div class="text-sm lg:flex-grow">
           <router-link
             to="/insightinternetApp/"
-            class="button-primary px-4 py-2 mr-2"
+            class="button-primary px-4 pt-1 pb-1 lg:py-2 mr-2"
             >Home</router-link
           >
           <router-link
             to="/insightinternetApp/services"
-            class="button-primary px-4 py-2 mr-2"
+            class="button-primary px-4 pt-1 pb-1 lg:py-2 mr-2"
             >Services</router-link
           >
           <router-link
             to="/insightinternetApp/about"
-            class="button-primary px-4 py-2 mr-2"
+            class="button-primary px-4 pt-1 pb-1 lg:py-2 mr-2"
             >Why us</router-link
           >
         </div>
-        <div>
+        <div class="pt-2 lg:pt-0">
           <router-link
             to="/insightinternetApp/contact"
-            class="button-secondary px-4 py-2 mt-4 lg:mt-0 mr-2 text-sm"
+            class="button-secondary px-4 pt-1 pb-1 lg:py-2 mr-4 lg:mt-0 mr-2 text-sm"
           >
             Contact
           </router-link>
