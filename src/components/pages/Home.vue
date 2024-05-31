@@ -6,7 +6,8 @@ import Page from "../Page.vue";
   <Page
     title1="Empowering Startups with Cutting-Edge React Applications"
     subTitle1="Transform your business with custom-built React solutions tailored to your needs."
-    copy1="At InsightInternet, we specialize in delivering high-quality React applications to help startups succeed. Our team of experienced developers is dedicated to providing innovative solutions that drive growth and efficiency."
+    copy1="At InsightInternet, we specialize in delivering high-quality React applications to help startups succeed. Our team of experienced developers is dedicated to providing innovative solutions that drive growth 
+    and efficiency as well as delivering customized solutions without the constrants of industry leaders."
     btnText="Get Started"
     imgName="MeM.png"
     title2="About InsightInternet"
