@@ -4,7 +4,7 @@ import Page from "../Page.vue";
 
 <template>
   <Page
-    title1="Why Choose Us"
+    title1="Previous Work"
     subTitle1="Expertise:"
     copy1="Highly skilled React development with a wealth of experience in building dynamic and responsive web applications. We offer bespoke solutions for startups and small businesses tailored to their specific needs without the limitaitions and cost of industry leaders such as Wix and Squarespace."
     img2ndCol="typing.gif"

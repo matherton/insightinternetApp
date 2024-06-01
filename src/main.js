@@ -6,6 +6,7 @@ import App from "./App.vue";
 import About from "./components/pages/About.vue";
 import Home from "./components/pages/Home.vue";
 import Services from "./components/pages/Services.vue";
+import Work from "./components/pages/Work.vue";
 import ContactForm from "./components/pages/ContactForm.vue";
 
 const routes = [
@@ -24,6 +25,15 @@ const routes = [
   {
     path: "/insightinternetApp/contact",
     component: ContactForm,
+  },
+
+  {
+    path: "/insightinternetApp/work",
+    component: Work,
+  },
+  {
+    path: "/insightinternetApp/*",
+    redirect: "/insightinternetApp/",
   },
 ];
 

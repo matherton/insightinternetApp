@@ -36,6 +36,11 @@ defineProps({
             class="button-primary px-4 pt-1 pb-1 lg:py-2 mr-2"
             >Why us</router-link
           >
+          <router-link
+            to="/insightinternetApp/work"
+            class="button-primary px-4 pt-1 pb-1 lg:py-2 mr-2"
+            >Work</router-link
+          >
         </div>
         <div class="pt-2 lg:pt-0">
           <router-link
