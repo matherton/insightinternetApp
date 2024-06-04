@@ -29,7 +29,9 @@
   --accent-green: #66ff66;
   --accent-orange: #ff6600;
 }
-
+.wrapper {
+  background-color: #fff;
+}
 .header {
   background-color: var(--primary-navy);
   color: white;
