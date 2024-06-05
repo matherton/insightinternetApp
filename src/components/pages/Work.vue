@@ -1,5 +1,4 @@
 <script setup>
-import Card from "../utilities/Card.vue";
 import WorkItem from "../utilities/WorkItem.vue";
 import connectLogo from "/src/assets/connect-auto.png";
 import arnoldLogo from "/src/assets/ar-logo-long.png";
@@ -15,55 +14,60 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
     </p>
 
     <div class="flex flex-wrap">
-      <div class="w-full md:w-1/4 xl:w-1/4">
-        <!-- Column 1 content -->
-        <Card
-          imgSrc="https://imgs.search.brave.com/3zvhcaTE_a-hTnRRddvadsgioBLKrZ9awcQ2eGdT3QI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/dHlwLnVzL2ZpbGUv/bGxveWRzLnN2Zw.svg"
-          header="Lloyd's Banking Group"
-          body="Provided React consulting services to Lloyds Banking Group through Sapient"
-          footer="view details"
-        />
-      </div>
-      <div class="w-full md:w-1/4 xl:w-1/4">
-        <!-- Column 2 content -->
-        <Card
-          :imgSrc="arnoldLogo"
-          header="Arnold Clark"
-          body="Provided React Native development services to Arnold Clark developing their mobile car reservation app"
-          footer="view details"
-        />
-      </div>
-      <div class="w-full md:w-1/4 xl:w-1/4">
-        <!-- Column 3 content -->
-        <Card
-          imgSrc="https://imgs.search.brave.com/3zvhcaTE_a-hTnRRddvadsgioBLKrZ9awcQ2eGdT3QI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/dHlwLnVzL2ZpbGUv/bGxveWRzLnN2Zw.svg"
-          header="Lloyd's Banking Group"
-          body="Provided React consulting services to Lloyds Banking Group through BJSS working on their loan's React application"
-          footer="view details"
-        />
-      </div>
-      <div class="w-full md:w-1/4 xl:w-1/4">
-        <Card
-          :imgSrc="connectLogo"
-          header="Connect-Auto"
-          body="Employed React Web Application development services to Connect-Auto and their clients"
-          footer="view details"
-          class="imgSpacer"
-        />
-      </div>
-
       <div
         class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4 w-full"
       >
         <!-- Column 1 Lloyds -->
-        <WorkItem :logoSrc="lloydsLogo" />
+        <WorkItem
+          :logoSrc="lloydsLogo"
+          alt="Lloyds Bank"
+          role="Sapient React Consultant"
+          body="Provided React consulting services to Lloyds Banking Group through Sapient to develop their loan's Journeys"
+          tech1="React"
+          tech2="MUI"
+          tech3="Cypress"
+          @click="toggleSelectFlag"
+        />
         <!-- Column 2 - Arnold Clark -->
-        <WorkItem :logoSrc="arnoldLogo" />
+        <WorkItem
+          :logoSrc="arnoldLogo"
+          alt="Arnold Clark"
+          role="React Native Developer"
+          body="Provided React Native development services to Arnold Clark developing their mobile car reservation app"
+          tech1="React Native"
+          tech2="Redux Sagas"
+          tech3="ES6"
+          imgResise
+        />
         <!-- Column 3 lloyds -->
-        <WorkItem :logoSrc="lloydsLogo" />
+        <WorkItem
+          :logoSrc="lloydsLogo"
+          alt="Lloyds Bank"
+          role="BJSS React Consultant"
+          body="Provided React consulting services to Lloyds Banking Group through BJSS working on their loan's React application"
+          tech1="React"
+          tech2="MUI"
+          tech3="Storybook"
+        />
         <!-- Column 4 Connect Auto-->
-        <WorkItem :logoSrc="connectLogo" />
+        <WorkItem
+          :logoSrc="connectLogo"
+          alt="Connect-Auto"
+          role="React Web Developer"
+          body="Employed React Web Application development services to Connect-Auto and their clients"
+          tech1="React"
+          tech2="styled-components"
+          tech3="ES6"
+        />
       </div>
+    </div>
+    <div v-if="showSelectFlag">
+      <!-- content to be rendered if condition is true -->
+      <p>showSetFlag True</p>
+    </div>
+    <div v-else>
+      <!-- content to be rendered if condition is false -->
+      <p>showSetFlag False</p>
     </div>
   </div>
 </template>
@@ -71,11 +75,21 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
 <script>
 export default {
   name: "Work",
+  methods: {
+    toggleSelectFlag() {
+      window.alert("show modal");
+      showSelectFlag = !showSelectFlag;
+    },
+  },
 };
 </script>
-<style scoped>
+<style scoped type="text/css">
 .work-intro {
   text-align: center;
   padding: 1rem;
+}
+
+.imgSpacer img {
+  margin-bottom: 1rem;
 }
 </style>
