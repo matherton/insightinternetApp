@@ -61,13 +61,9 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
         />
       </div>
     </div>
-    <div v-if="showSelectFlag">
+    <div v-show="showSelectFlag">
       <!-- content to be rendered if condition is true -->
       <p>showSetFlag True</p>
-    </div>
-    <div v-else>
-      <!-- content to be rendered if condition is false -->
-      <p>showSetFlag False</p>
     </div>
   </div>
 </template>
@@ -75,10 +71,14 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
 <script>
 export default {
   name: "Work",
+  data() {
+    return {
+      showSelectFlag: false,
+    };
+  },
   methods: {
     toggleSelectFlag() {
-      window.alert("show modal");
-      showSelectFlag = !showSelectFlag;
+      this.showSelectFlag = !this.showSelectFlag;
     },
   },
 };
