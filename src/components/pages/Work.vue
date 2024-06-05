@@ -2,6 +2,8 @@
 import Card from "../utilities/Card.vue";
 import WorkItem from "../utilities/WorkItem.vue";
 import connectLogo from "/src/assets/connect-auto.png";
+import arnoldLogo from "/src/assets/ar-logo-long.png";
+import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
 </script>
 
 <template>
@@ -25,7 +27,7 @@ import connectLogo from "/src/assets/connect-auto.png";
       <div class="w-full md:w-1/4 xl:w-1/4">
         <!-- Column 2 content -->
         <Card
-          imgSrc="https://upload.wikimedia.org/wikipedia/commons/f/f5/Arnold_Clark_Logo.svg"
+          :imgSrc="arnoldLogo"
           header="Arnold Clark"
           body="Provided React Native development services to Arnold Clark developing their mobile car reservation app"
           footer="view details"
@@ -53,14 +55,14 @@ import connectLogo from "/src/assets/connect-auto.png";
       <div
         class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4 w-full"
       >
-        <!-- Column 1 -->
-        <WorkItem />
-        <!-- Column 2 -->
-        <WorkItem />
-        <!-- Column 3 -->
-        <WorkItem />
-        <!-- Column 4 -->
-        <WorkItem />
+        <!-- Column 1 Lloyds -->
+        <WorkItem :logoSrc="lloydsLogo" />
+        <!-- Column 2 - Arnold Clark -->
+        <WorkItem :logoSrc="arnoldLogo" />
+        <!-- Column 3 lloyds -->
+        <WorkItem :logoSrc="lloydsLogo" />
+        <!-- Column 4 Connect Auto-->
+        <WorkItem :logoSrc="connectLogo" />
       </div>
     </div>
   </div>

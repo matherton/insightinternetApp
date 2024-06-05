@@ -1,12 +1,14 @@
+<script setup>
+defineProps({
+  logoSrc: String,
+});
+</script>
+
 <template>
   <div class="max-w-sm rounded overflow-hidden shadow-lg">
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
-      <img
-        class="w-full"
-        src="https://logos-world.net/wp-content/uploads/2021/03/Lloyds-Bank-Symbol.png"
-        alt="Sunset in the mountains"
-      />
-      <hr />
+      <img class="w-full" :src="logoSrc" alt="Sunset in the mountains" />
+      <hr class="mt-4" />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">Senior React Native Developer</div>
         <p class="text-gray-700 text-base">
