@@ -47,7 +47,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           role="BJSS React Consultant"
           body="Provided React consulting services to Lloyds Banking Group through BJSS working on their loan's React application"
           tech1="React"
-          tech2="MUI"
+          tech2="TypeScript"
           tech3="Storybook"
           @click="toggleFlag('showBJSS')"
         />
@@ -97,12 +97,6 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           developers.
         </li>
       </ul>
-      <!-- <p class="testimonial">
-        "Insight Internet's expertise in React transformed our internal
-        processes. The new application has drastically reduced the time required
-        for loan decisions, enhancing our service delivery." - Lloyds Banking
-        Group
-      </p> -->
     </div>
     <div v-show="showArnoldClark">
       <div class="project container">
@@ -141,12 +135,6 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
             performance.
           </li>
         </ul>
-        <p class="testimonial">
-          "Insight Internet's development of our car reservation app has greatly
-          improved our customer engagement and streamlined the reservation
-          process. Their expertise in React and Redux Saga was invaluable." -
-          Arnold Clark
-        </p>
       </div>
     </div>
     <div v-show="showBJSS">
@@ -190,21 +178,15 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
             across different brands.
           </li>
         </ul>
-        <!-- <p class="testimonial">
-          "Insight Internet's flexibility and expertise ensured a smooth
-          transition to remote work. Their components not only met but exceeded
-          our expectations for reusability and functionality." - Lloyds Banking
-          Group
-        </p> -->
       </div>
     </div>
-    <div v-show="showConnectAuto">
+    <div v-show="showConnectAuto" class="transition ease-in-out delay-150">
       <div class="project container">
         <img src="/src/assets/connect-auto.png" alt="Connect Auto Logo" />
         <h2>Website Development and Enhancements</h2>
         <p><strong>Client:</strong> Connect Auto</p>
         <p><strong>Industry:</strong> Automotive</p>
-        <p><strong>Project Duration:</strong> Not specified</p>
+        <p><strong>Project Duration:</strong>6 months</p>
         <p>
           <strong>Project Description:</strong> Insight Internet collaborated
           with Connect Auto on various high-profile automotive projects,
@@ -241,12 +223,6 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
             capabilities.
           </li>
         </ul>
-        <p class="testimonial">
-          "Insight Internet's innovative solutions and attention to detail have
-          significantly improved our web presence. Their ability to deliver
-          bespoke functionality and reusable components has been instrumental in
-          our projects." - Connect Auto
-        </p>
       </div>
     </div>
   </div>
