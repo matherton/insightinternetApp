@@ -14,8 +14,6 @@ import Page from "../Page.vue";
     copy3="At InsightInternet, we stay at the forefront of technology trends to bring the most advanced solutions to your business."
     subTitle4="Reliability:"
     copy4="Depend on us for consistent, high-quality service and ongoing support."
-    subTitle5="Pojects:"
-    copy5="Previous experience with various clients available on my portfolio website."
   />
 </template>
 

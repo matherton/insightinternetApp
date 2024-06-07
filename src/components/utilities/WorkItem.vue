@@ -23,6 +23,9 @@ defineProps({
 
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">{{ role }}</div>
+      <!-- <p class="text-gray-700 text-base">
+        {{ body }}
+      </p> -->
     </div>
     <hr />
     <div class="px-6 pt-4 pb-2">
