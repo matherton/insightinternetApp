@@ -22,7 +22,6 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           :logoSrc="lloydsLogo"
           alt="Lloyds Bank"
           role="Sapient React Consultant"
-          body="Provided React consulting services to Lloyds Banking Group through Sapient to develop their loan's Journeys"
           tech1="React"
           tech2="MUI"
           tech3="Cypress"
@@ -33,7 +32,6 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           :logoSrc="arnoldLogo"
           alt="Arnold Clark"
           role="React Native Developer"
-          body="Provided React Native development services to Arnold Clark developing their mobile car reservation app"
           tech1="React Native"
           tech2="Redux Sagas"
           tech3="ES6"
@@ -45,7 +43,6 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           :logoSrc="lloydsLogo"
           alt="Lloyds Bank"
           role="BJSS React Consultant"
-          body="Provided React consulting services to Lloyds Banking Group through BJSS working on their loan's React application"
           tech1="React"
           tech2="TypeScript"
           tech3="Storybook"
@@ -56,7 +53,6 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           :logoSrc="connectLogo"
           alt="Connect-Auto"
           role="React Web Developer"
-          body="Employed React Web Application development services to Connect-Auto and their clients"
           tech1="React"
           tech2="styled-components"
           tech3="ES6"
@@ -233,7 +229,7 @@ export default {
   name: "Work",
   data() {
     return {
-      showSelectFlag: false,
+      showSelectFlag: true,
       showArnoldClark: false,
       showBJSS: false,
       showConnectAuto: false,
