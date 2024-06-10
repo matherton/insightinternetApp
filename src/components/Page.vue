@@ -113,6 +113,14 @@ export default {
       type: Number,
       default: 2,
     },
+    subTitle5: {
+      type: String,
+      default: "",
+    },
+    copy5: {
+      type: String,
+      default: "",
+    },
   },
 };
 </script>
