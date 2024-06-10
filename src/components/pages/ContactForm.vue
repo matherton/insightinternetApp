@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+import EmailJSForm from "./EmailJSForm.vue";
+</script>
 
 <template>
   <main class="p-4">
+    <EmailJSForm />
     <h2 class="text-2xl text-gray-500 font-semibold mb-2">Contact Us</h2>
     <div class="text-sm text-gray-600 mb-6">
       <p>
