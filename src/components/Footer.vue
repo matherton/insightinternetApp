@@ -133,7 +133,6 @@
             <router-link
               to="/insightinternetApp/"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
-              @before-enter="scrollTop"
             >
               Home
             </router-link>
@@ -143,7 +142,6 @@
             <router-link
               to="/insightinternetApp/services"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
-              @before-enter="scrollTop"
               >Services</router-link
             >
           </div>
@@ -152,7 +150,6 @@
             <router-link
               to="/insightinternetApp/about"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
-              @before-enter="scrollTop"
               >Why us</router-link
             >
           </div>
@@ -161,7 +158,6 @@
             <router-link
               to="/insightinternetApp/contact"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
-              @before-enter="scrollTop"
               >Contact
             </router-link>
           </div>
@@ -178,10 +174,5 @@
 <script>
 export default {
   name: "Footer",
-  methods: {
-    scrollToTop() {
-      window.scrollTo(0, 0);
-    },
-  },
 };
 </script>
