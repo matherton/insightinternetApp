@@ -1,6 +1,7 @@
 <script setup>
 import emailjs from "@emailjs/browser";
 import { useRouter } from "vue-router";
+import Home from "./Home.vue";
 const router = useRouter();
 </script>
 
@@ -136,7 +137,7 @@ export default {
           }. we have recieved your message. We will get back to you as soon as possible."`
         );
         this.$refs.form.reset();
-        this.$router.push("/insightinternetApp/");
+        this.$router.push("./");
       } catch (error) {
         console.log("FAILED...", error.text);
       }
