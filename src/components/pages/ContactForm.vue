@@ -119,27 +119,28 @@ export default {
   methods: {
     async sendEmail() {
       try {
+        const formData = this.$refs.form;
+        const { first_name, last_name } = formData;
+        const { value: firstName } = first_name;
+        const { value: lastName } = last_name;
+
         await emailjs.sendForm(
           "service_vdaz4di",
           "template_dzrk3pt",
-          this.$refs.form,
+          formData,
           {
             publicKey: "ekCMxzOZE8WLkxngL",
           }
         );
-        console.log("SUCCESS!");
 
         window.alert(
-          `"Thank you for your interest ${
-            this.$refs.form.first_name.value
-          }${" "}${
-            this.$refs.form.last_name.value
-          }. we have recieved your message. We will get back to you as soon as possible."`
+          `Thank you for your interest ${firstName} ${lastName}. We have received your message and will get back to you as soon as possible.`
         );
-        this.$refs.form.reset();
+
+        formData.reset();
         this.$router.push("./");
       } catch (error) {
-        console.log("FAILED...", error.text);
+        console.error("Failed to send email:", error);
       }
     },
   },
