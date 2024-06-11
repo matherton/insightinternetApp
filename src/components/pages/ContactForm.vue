@@ -1,22 +1,19 @@
 <script setup>
-import EmailJSForm from "./EmailJSForm.vue";
+import emailjs from "@emailjs/browser";
+import { useRouter } from "vue-router";
+const router = useRouter();
 </script>
 
 <template>
   <main class="p-4">
-    <EmailJSForm />
     <h2 class="text-2xl text-gray-500 font-semibold mb-2">Contact Us</h2>
     <div class="text-sm text-gray-600 mb-6">
       <p>
-        Ready to transform your business with custom React applications? Contact
-        us today to discuss your project.
+        Ready to transform your business with custom applications? Contact us
+        today to discuss your project.
       </p>
     </div>
-    <form
-      id="contact_form"
-      action="https://formsubmit.co/mark@insightinternet.co.uk"
-      method="POST"
-    >
+    <form id="contact_form" ref="form" @submit.prevent="sendEmail">
       <div class="flex mb-5">
         <div class="w-1/2 mr-2">
           <label for="first_name_field" class="block text-sm text-gray-500"
@@ -27,6 +24,7 @@ import EmailJSForm from "./EmailJSForm.vue";
             type="text"
             name="first_name"
             id="first_name_field"
+            autocomplete="given-name"
           />
         </div>
         <div class="w-1/2">
@@ -39,6 +37,7 @@ import EmailJSForm from "./EmailJSForm.vue";
             name="last_name"
             id="last_name_field"
             required
+            autocomplete="family-name"
           />
         </div>
       </div>
@@ -53,6 +52,7 @@ import EmailJSForm from "./EmailJSForm.vue";
             name="email"
             id="email_field"
             required
+            autocomplete="off"
           />
         </div>
         <div class="w-1/2">
@@ -64,6 +64,7 @@ import EmailJSForm from "./EmailJSForm.vue";
             type="tel"
             name="phone"
             id="phone_field"
+            autocomplete="off"
           />
         </div>
       </div>
@@ -78,6 +79,7 @@ import EmailJSForm from "./EmailJSForm.vue";
           id="message_field"
           rows="6"
           required
+          auto-complete="message"
         ></textarea>
         <input
           type="hidden"
@@ -88,7 +90,6 @@ import EmailJSForm from "./EmailJSForm.vue";
       <button
         type="submit"
         class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-        @click="checkFormComplete($event)"
       >
         Send
       </button>
@@ -111,20 +112,33 @@ export default {
   name: "ContactForm",
   data() {
     return {
-      formFields: ["last_name", "email", "message"],
+      formFields: ["first_name", "last_name", "email", "message"],
     };
   },
   methods: {
-    checkFormComplete(event) {
-      const isFormComplete = this.formFields.every((field) => {
-        return !!document.getElementById(field).value;
-      });
+    async sendEmail() {
+      try {
+        await emailjs.sendForm(
+          "service_vdaz4di",
+          "template_dzrk3pt",
+          this.$refs.form,
+          {
+            publicKey: "ekCMxzOZE8WLkxngL",
+          }
+        );
+        console.log("SUCCESS!");
 
-      if (!isFormComplete) {
-        alert("Please fill in all fields!");
-        event.preventDefault();
-      } else {
-        this.$router.push({ name: "home" });
+        window.alert(
+          `"Thank you for your interest ${
+            this.$refs.form.first_name.value
+          }${" "}${
+            this.$refs.form.last_name.value
+          }. we have recieved your message. We will get back to you as soon as possible."`
+        );
+        this.$refs.form.reset();
+        this.$router.push("/insightinternetApp/");
+      } catch (error) {
+        console.log("FAILED...", error.text);
       }
     },
   },
