@@ -1,4 +1,5 @@
 <script setup>
+import CurrentWork from "../utilities/CurrentWork.vue";
 import WorkItem from "../utilities/WorkItem.vue";
 import connectLogo from "/src/assets/connect-auto.png";
 import arnoldLogo from "/src/assets/ar-logo-long.png";
@@ -12,6 +13,18 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       clients. Each project highlights our commitment to excellence and our
       expertise in delivering top-notch React applications.
     </p>
+
+    <CurrentWork
+      imgName="pie.png"
+      alt="Harkness Pies Logo"
+      imgClass="pie-logo"
+      client="Harkness Pies"
+      industry="Food & Beverages"
+      duration="ongoing"
+      description="Insight Internet created a React Web Application for Harkness Pies. The system features a user-friendly interface for customers to view products and find out more about its ethos and the owner, Patrick Harkness. The project is ongoing, with Patrick currently undergoing a shop redesign. Once complete, he will supply new photos and content to update the web app, which was initially developed from a UX design he supplied."
+      tech="React, Tailwind, Node.js, ES6, UX Design"
+      hrefAddress="https://matherton.github.io/harkness-pies/"
+    />
 
     <div class="flex flex-wrap">
       <div
@@ -100,7 +113,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
         <h2>Car Reservation Mobile App</h2>
         <p><strong>Client:</strong> Arnold Clark</p>
         <p><strong>Industry:</strong> Automotive</p>
-        <p><strong>Project Duration:</strong> Not specified</p>
+        <p><strong>Project Duration:</strong>5 months</p>
         <p>
           <strong>Project Description:</strong> Insight Internet undertook a
           remote contract with Arnold Clark to develop their car reservation
@@ -229,7 +242,7 @@ export default {
   name: "Work",
   data() {
     return {
-      showSelectFlag: true,
+      showSelectFlag: false,
       showArnoldClark: false,
       showBJSS: false,
       showConnectAuto: false,
