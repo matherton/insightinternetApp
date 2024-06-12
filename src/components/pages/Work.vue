@@ -13,7 +13,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       clients. Each project highlights our commitment to excellence and our
       expertise in delivering top-notch React applications.
     </p>
-
+    <strong class="flex flex-col items-center work-header">Current Work</strong>
     <CurrentWork
       imgName="pie.png"
       alt="Harkness Pies Logo"
@@ -26,6 +26,20 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       hrefAddress="https://matherton.github.io/harkness-pies/"
     />
 
+    <CurrentWork
+      imgName="ewp-transparent.png"
+      alt="Edinburgh Wheels Project"
+      imgClass="ewp-logo"
+      client="Edinburgh Wheels Project"
+      industry="Charity"
+      duration="onhold"
+      description="InsightInternet volunteered to help the Edinburgh Wheels Project setup their new skate facility in Edinburgh. I also created a React App holding page to be updated with content once the skate facility is ready."
+      tech="React"
+      hrefAddress="https://matherton.github.io/wheels-project/"
+    />
+    <strong class="flex flex-col items-center work-header"
+      >Previous Work</strong
+    >
     <div class="flex flex-wrap">
       <div
         class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4 w-full"
@@ -266,9 +280,12 @@ export default {
 <style scoped type="text/css">
 .work-intro {
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
 }
-
+.work-header {
+  padding: 1rem;
+  text-decoration: underline;
+}
 .imgSpacer img {
   margin-bottom: 1rem;
 }

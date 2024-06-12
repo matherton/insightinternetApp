@@ -1,5 +1,5 @@
 <template>
-  <div class="project container">
+  <div class="project container" style="margin-bottom: 0.5rem">
     <img
       :src="`./src/assets/${imgName}`"
       :alt="`${alt}`"
@@ -19,6 +19,7 @@
       <button
         class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
         target="_blank"
+        title="opens in new window"
       >
         View Live
       </button>
@@ -43,13 +44,15 @@ export default {
 };
 </script>
 <style scoped>
-.pie-logo {
+.pie-logo,
+.ewp-logo {
   width: 179px;
   height: auto;
   margin-right: 0.5rem;
   position: relative;
   float: left;
 }
+
 .project p {
   margin: 0.5rem 0;
 }
