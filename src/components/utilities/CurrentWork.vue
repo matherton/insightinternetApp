@@ -1,7 +1,7 @@
 <template>
   <div class="project container" style="margin-bottom: 0.5rem">
     <img
-      :src="`./src/assets/${imgName}`"
+      :src="`/insightinternetApp/src/assets/${imgName}`"
       :alt="`${alt}`"
       :class="`${imgClass}`"
     />
