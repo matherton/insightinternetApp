@@ -1,10 +1,6 @@
 <template>
   <div class="project container" style="margin-bottom: 0.5rem">
-    <img
-      :src="`/insightinternetApp/src/assets/${imgName}`"
-      :alt="`${alt}`"
-      :class="`${imgClass}`"
-    />
+    <img :src="`./${imgName}`" :alt="`${alt}`" :class="`${imgClass}`" />
     <p><strong>Client:</strong>{{ " " }}{{ client }}</p>
     <p><strong>Industry:</strong>{{ " " }}{{ industry }}</p>
     <p><strong>Project Duration:</strong>{{ " " }}{{ duration }}</p>
