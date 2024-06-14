@@ -11,29 +11,29 @@ import ContactForm from "./components/pages/ContactForm.vue";
 
 const routes = [
   {
-    path: "/insightinternetApp/",
+    path: "/:subpath*",
     component: Home,
   },
   {
-    path: "/insightinternetApp/about",
+    path: "/:subpath*/about",
     component: About,
   },
   {
-    path: "/insightinternetApp/services",
+    path: "/:subpath*/services",
     component: Services,
   },
   {
-    path: "/insightinternetApp/contact",
+    path: "/:subpath*/contact",
     component: ContactForm,
   },
 
   {
-    path: "/insightinternetApp/work",
+    path: "/:subpath*/work",
     component: Work,
   },
   {
-    path: "/insightinternetApp/*",
-    redirect: "/insightinternetApp/",
+    path: "/:subpath*/*",
+    redirect: "/:subpath*",
   },
 ];
 
