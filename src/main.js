@@ -11,29 +11,29 @@ import ContactForm from "./components/pages/ContactForm.vue";
 
 const routes = [
   {
-    path: "/:subpath*",
+    path: "/",
     component: Home,
   },
   {
-    path: "/:subpath*/about",
+    path: "/about",
     component: About,
   },
   {
-    path: "/:subpath*/services",
+    path: "/services",
     component: Services,
   },
   {
-    path: "/:subpath*/contact",
+    path: "/contact",
     component: ContactForm,
   },
 
   {
-    path: "/:subpath*/work",
+    path: "/work",
     component: Work,
   },
   {
-    path: "/:subpath*/*",
-    redirect: "/:subpath*",
+    path: "/*",
+    redirect: Home,
   },
 ];
 
