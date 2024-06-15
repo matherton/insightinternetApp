@@ -19,7 +19,6 @@ import BulletListVue from "./utilities/BulletList.vue";
       </router-link>
       <p>{{ copy1 }}</p>
     </section>
-
     <section v-if="imgName">
       <img :src="`./${imgName}`" class="mx-auto" alt="" typr="image" />
     </section>
