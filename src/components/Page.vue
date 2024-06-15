@@ -9,7 +9,7 @@ import BulletListVue from "./utilities/BulletList.vue";
     <section>
       <h2>{{ title1 }}</h2>
       <strong>{{ subTitle1 }}</strong>
-      <router-link to="/insightinternetApp/contact">
+      <router-link to="/contact">
         <button
           v-if="btnText"
           class="bg-white hover:var(--accent-orange) text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
