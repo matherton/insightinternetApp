@@ -105,7 +105,7 @@
         >
           <div>
             <router-link
-              to="/services"
+              to="/insightinternetApp/services"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
               @click="scrollToTop"
               >Services</router-link
@@ -113,7 +113,7 @@
           </div>
           <div>
             <router-link
-              to="/about"
+              to="/insightinternetApp/about"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
               @click="scrollToTop"
               >Why us</router-link
@@ -121,7 +121,7 @@
           </div>
           <div>
             <router-link
-              to="/work"
+              to="/insightinternetApp/work"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
               @click="scrollToTop"
             >
@@ -130,7 +130,7 @@
           </div>
           <div>
             <router-link
-              to="/contact"
+              to="/insightinternetApp/contact"
               class="font-medium text-gray-700 transition hover:opacity-75 text-white"
               @click="scrollToTop"
               >Contact
