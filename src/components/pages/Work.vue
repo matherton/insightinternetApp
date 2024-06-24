@@ -1,4 +1,5 @@
 <script setup>
+import { Transition } from "vue";
 import CurrentWork from "../utilities/CurrentWork.vue";
 import WorkItem from "../utilities/WorkItem.vue";
 import connectLogo from "/src/assets/connect-auto.png";
@@ -45,15 +46,17 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
         class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4 w-full"
       >
         <!-- Column 1 Lloyds -->
-        <WorkItem
-          :logoSrc="lloydsLogo"
-          alt="Lloyds Bank"
-          role="Sapient React Consultant"
-          tech1="React"
-          tech2="MUI"
-          tech3="Cypress"
-          @click="toggleFlag('showSelectFlag')"
-        />
+        <Transition name="fade">
+          <WorkItem
+            :logoSrc="lloydsLogo"
+            alt="Lloyds Bank"
+            role="Sapient React Consultant"
+            tech1="React"
+            tech2="MUI"
+            tech3="Cypress"
+            @click="toggleFlag('showSelectFlag')"
+          />
+        </Transition>
         <!-- Column 2 - Arnold Clark -->
         <WorkItem
           :logoSrc="arnoldLogo"
@@ -88,41 +91,41 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       </div>
     </div>
 
-    <div class="project container" v-show="showSelectFlag">
-      <img :src="lloydsLogo" alt="Lloyds Banking Group Logo" />
-      <h2>Banking Staff Support Application</h2>
-      <p><strong>Client:</strong> Lloyds Banking Group</p>
-      <p><strong>Industry:</strong> Finance</p>
-      <p><strong>Project Duration:</strong> 6 months</p>
-      <p>
-        <strong>Project Description:</strong> Insight Internet provided React
-        consulting services to Lloyds Banking Group through Sapient. The project
-        involved the development of a reusable component library for a staff
-        support application. The application was designed to assist banking
-        staff in providing real-time loan eligibility information to customers
-        over the phone. This innovative solution replaced a manual process that
-        previously took up to two weeks, significantly improving efficiency and
-        customer satisfaction.
-      </p>
-      <p><strong>Technologies Used:</strong> React, Cypress, REST APIs</p>
-      <p><strong>Results:</strong></p>
-      <ul>
-        <li>
-          Streamlined loan eligibility checks from two weeks to real-time.
-        </li>
-        <li>Enhanced customer service with instant data retrieval.</li>
-        <li>
-          Developed reusable components with comprehensive Cypress test
-          coverage.
-        </li>
-        <li>
-          Seamless integration with live APIs in collaboration with backend
-          developers.
-        </li>
-      </ul>
-    </div>
-    <div v-show="showArnoldClark">
-      <div class="project container">
+    <div class="project container">
+      <div v-show="showSelectFlag">
+        <img :src="lloydsLogo" alt="Lloyds Banking Group Logo" />
+        <h2>Banking Staff Support Application</h2>
+        <p><strong>Client:</strong> Lloyds Banking Group</p>
+        <p><strong>Industry:</strong> Finance</p>
+        <p><strong>Project Duration:</strong> 6 months</p>
+        <p>
+          <strong>Project Description:</strong> Insight Internet provided React
+          consulting services to Lloyds Banking Group through Sapient. The
+          project involved the development of a reusable component library for a
+          staff support application. The application was designed to assist
+          banking staff in providing real-time loan eligibility information to
+          customers over the phone. This innovative solution replaced a manual
+          process that previously took up to two weeks, significantly improving
+          efficiency and customer satisfaction.
+        </p>
+        <p><strong>Technologies Used:</strong> React, Cypress, REST APIs</p>
+        <p><strong>Results:</strong></p>
+        <ul>
+          <li>
+            Streamlined loan eligibility checks from two weeks to real-time.
+          </li>
+          <li>Enhanced customer service with instant data retrieval.</li>
+          <li>
+            Developed reusable components with comprehensive Cypress test
+            coverage.
+          </li>
+          <li>
+            Seamless integration with live APIs in collaboration with backend
+            developers.
+          </li>
+        </ul>
+      </div>
+      <div v-show="showArnoldClark">
         <img src="/src/assets/arnold-clark-logo.png" alt="Arnold Clark Logo" />
         <h2>Car Reservation Mobile App</h2>
         <p><strong>Client:</strong> Arnold Clark</p>
@@ -159,9 +162,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           </li>
         </ul>
       </div>
-    </div>
-    <div v-show="showBJSS">
-      <div class="project container">
+      <div v-show="showBJSS">
         <img
           src="/src/assets/lloyds-bank-logo-long.png"
           alt="Lloyds Banking Group Logo"
@@ -202,9 +203,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           </li>
         </ul>
       </div>
-    </div>
-    <div v-show="showConnectAuto" class="transition ease-in-out delay-150">
-      <div class="project container">
+      <div v-show="showConnectAuto" class="transition ease-in-out delay-150">
         <img src="/src/assets/connect-auto.png" alt="Connect Auto Logo" />
         <h2>Website Development and Enhancements</h2>
         <p><strong>Client:</strong> Connect Auto</p>
@@ -254,6 +253,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
 <script>
 export default {
   name: "Work",
+  components: { Transition, CurrentWork, WorkItem },
   data() {
     return {
       showSelectFlag: false,
@@ -278,6 +278,19 @@ export default {
 };
 </script>
 <style scoped type="text/css">
+.fade-leave-to,
+.enter-from {
+  opacity: 0;
+}
+.fade-leave-from,
+.enter-to {
+  opacity: 1;
+}
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 0.5s ease;
+}
+
 .work-intro {
   text-align: center;
   padding: 1rem 1rem 0;
