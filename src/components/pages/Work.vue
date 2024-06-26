@@ -46,7 +46,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
         class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4 w-full"
       >
         <!-- Column 1 Lloyds -->
-        <Transition name="fade">
+        <Transition name="fade" type="transition" duration="1000">
           <WorkItem
             :logoSrc="lloydsLogo"
             alt="Lloyds Bank"

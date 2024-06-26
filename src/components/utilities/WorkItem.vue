@@ -13,6 +13,7 @@ defineProps({
 <template>
   <div
     class="max-w-sm rounded overflow-hidden shadow-lg p-4 hover:bg-sky-500/50 max-h-20 lg:max-h-full"
+    style="cursor: pointer"
   >
     <img
       :class="imgResise ? 'w-full img-resize' : 'w-full'"
