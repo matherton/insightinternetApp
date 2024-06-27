@@ -213,7 +213,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
         <h2>Website Development and Enhancements</h2>
         <p><strong>Client:</strong> Connect Auto</p>
         <p><strong>Industry:</strong> Automotive</p>
-        <p><strong>Project Duration:</strong>6 months</p>
+        <p><strong>Project Duration:</strong> 6 months</p>
         <p>
           <strong>Project Description:</strong> Insight Internet collaborated
           with Connect Auto on various high-profile automotive projects,
