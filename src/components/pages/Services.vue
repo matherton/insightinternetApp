@@ -7,7 +7,7 @@ import Page from "../Page.vue";
     title1="Services"
     subTitle1="Custom React Development:"
     copy1="We offer a range of services to help you achieve your goals. From custom React applications to web development, tailored to meet your specific needs. Contact us today to learn more about our services."
-    img2ndCol="react-icon.png"
+    img3rdCol="vite.svg"
     subTitle2="Web Application Modernization:"
     copy2="Upgrade your existing web applications with modern React technology to improve performance and user experience."
     subTitle3="Maintenance and Support:"

@@ -1,5 +1,7 @@
 <script setup>
 import BulletListVue from "./utilities/BulletList.vue";
+import reactLogo from "../assets/react-icon.png";
+import viteLogo from "/vite.svg";
 </script>
 <!-- TODO put all images in the public folder in order for them to available in dist folder like globe-icon.gif -->
 <template>
@@ -30,6 +32,17 @@ import BulletListVue from "./utilities/BulletList.vue";
         alt=""
         type="image"
       />
+    </section>
+
+    <section v-if="img3rdCol">
+      <div class="grid grid-cols-2 gap-4">
+        <a href="https://vitejs.dev" target="_blank">
+          <img :src="`${viteLogo}`" className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img :src="`${reactLogo}`" className="logo react" alt="React logo" />
+        </a>
+      </div>
     </section>
 
     <section v-if="subTitleList">
@@ -104,6 +117,7 @@ export default {
     copy4: String,
     subTitleList: Boolean,
     img2ndCol: String,
+    img3rdCol: String,
     gridColMD: {
       type: Number,
       default: 2,
