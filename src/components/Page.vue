@@ -37,7 +37,7 @@ import viteLogo from "/vite.svg";
     <section v-if="img3rdCol">
       <div class="grid grid-cols-2 gap-4">
         <a href="https://vitejs.dev" target="_blank">
-          <img :src="`${viteLogo}`" className="logo" alt="Vite logo" />
+          <img :src="`${viteLogo}`" className="logo vite" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img :src="`${reactLogo}`" className="logo react" alt="React logo" />
@@ -117,7 +117,7 @@ export default {
     copy4: String,
     subTitleList: Boolean,
     img2ndCol: String,
-    img3rdCol: String,
+    img3rdCol: Boolean,
     gridColMD: {
       type: Number,
       default: 2,
