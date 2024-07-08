@@ -16,6 +16,17 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
     </p>
     <strong class="flex flex-col items-center work-header">Current Work</strong>
     <CurrentWork
+      imgName="typing.gif"
+      alt="in progress"
+      imgClass="ewp-logo"
+      client="Paul Dalrymple Art"
+      industry="Creative Arts"
+      duration="ongoing"
+      description="InsightInternet is currently developing a React web application for Paul Dalrymple Art. The project is in progress, and we have presented various options for showcasing his artwork on the homepage. The application will be finalized and launched once Paul provides a UX design for the remaining pages and supplies his artwork files to replace the placeholder images currently in use."
+      tech="React, Node.js, Tailwind, ES6"
+      hrefAddress="https://matherton.github.io/PauldalrympleArt/"
+    />
+    <CurrentWork
       imgName="pie.png"
       alt="Harkness Pies Logo"
       imgClass="pie-logo"
