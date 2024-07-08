@@ -58,7 +58,7 @@ defineProps({
 <style scoped>
 /* Only way I could find to overwrite Tailwind so the nav would remove the margin right on smaller screens 
 andto remove the padding top on larger screens */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .button-primary {
     margin-right: 10%;
   }
