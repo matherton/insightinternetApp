@@ -18,7 +18,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
     <CurrentWork
       imgName="typing.gif"
       alt="in progress"
-      imgClass="ewp-logo"
+      imgClass="ewp-logo mb-4"
       client="Paul Dalrymple Art"
       industry="Creative Arts"
       duration="ongoing"
