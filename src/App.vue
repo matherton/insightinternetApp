@@ -74,5 +74,23 @@ export default {
   components: {
     Page,
   },
+  mounted() {
+    function addViewportMetaTag() {
+      const head = document.head;
+      const viewportTag = document.querySelector('meta[name="viewport"]');
+
+      if (!viewportTag) {
+        const metaTag = document.createElement("meta");
+        metaTag.setAttribute("name", "viewport");
+        metaTag.setAttribute(
+          "content",
+          "width=device-width, initial-scale=1.0"
+        );
+        head.appendChild(metaTag);
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", addViewportMetaTag);
+  },
 };
 </script>
