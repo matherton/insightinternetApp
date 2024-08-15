@@ -21,7 +21,7 @@ import viteLogo from "/vite.svg";
       </router-link>
       <p>{{ copy1 }}</p>
     </section>
-    <section v-if="imgName">
+    <section v-if="imgName" class="positionMe">
       <img :src="`./${imgName}`" class="mx-auto" alt="" type="image" />
     </section>
 
@@ -76,32 +76,10 @@ import viteLogo from "/vite.svg";
     </section>
   </main>
 </template>
-<style scoped>
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
 
-p {
-  margin-bottom: 0.5rem;
-}
-
-button {
-  display: block;
-  margin: 1.5rem auto;
-}
-
-button:hover {
-  color: #fff;
-  background-color: var(--accent-orange);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-</style>
 <script>
 export default {
   name: "Page",
-  methods: {},
   props: {
     title1: String,
     subTitle1: String,
@@ -137,3 +115,40 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  display: block;
+  margin: 1.5rem auto;
+}
+
+button:hover {
+  color: #fff;
+  background-color: var(--accent-orange);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.positionMe {
+  position: static;
+}
+
+@media (min-width: 768px) {
+  .positionMe {
+    position: relative;
+  }
+  .positionMe img {
+    position: absolute;
+    bottom: 0;
+  }
+}
+</style>
