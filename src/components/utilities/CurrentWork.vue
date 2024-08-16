@@ -5,7 +5,7 @@
     <p><strong>Industry:</strong>{{ " " }}{{ industry }}</p>
     <p><strong>Project Duration:</strong>{{ " " }}{{ duration }}</p>
     <p><strong>Project Description:</strong>{{ " " }}{{ description }}</p>
-    <p><strong>Technologies Used so far:</strong>{{ " " }}{{ tech }}</p>
+    <p><strong>Tools Used so far:</strong>{{ " " }}{{ tech }}</p>
 
     <a
       :href="`${hrefAddress}`"

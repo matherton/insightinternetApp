@@ -124,7 +124,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           process that previously took up to two weeks, significantly improving
           efficiency and customer satisfaction.
         </p>
-        <p><strong>Technologies Used:</strong> React, Cypress, REST APIs</p>
+        <p><strong>Tools Used:</strong> React, Cypress, REST APIs</p>
         <p><strong>Results:</strong></p>
         <ul>
           <li>
@@ -158,8 +158,8 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           styled-components.
         </p>
         <p>
-          <strong>Technologies Used:</strong> React, Redux Saga, VS Code, Xcode,
-          ES6, styled-components, Invision
+          <strong>Tools Used:</strong> React, Redux Saga, VS Code, Xcode, ES6,
+          styled-components, Invision
         </p>
         <p><strong>Results:</strong></p>
         <ul>
@@ -199,8 +199,8 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           modularity and reusability.
         </p>
         <p>
-          <strong>Technologies Used:</strong> React, Storybook, TypeScript, VS
-          Code, MS Teams
+          <strong>Tools Used:</strong> React, Storybook, TypeScript, VS Code, MS
+          Teams
         </p>
         <p><strong>Results:</strong></p>
         <ul>
@@ -239,8 +239,8 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
           CMS WYSIWYG editor.
         </p>
         <p>
-          <strong>Technologies Used:</strong> React, Flow, ES6,
-          styled-components, SVG, JSON, markdown-to-jsx, Invision
+          <strong>Tools Used:</strong> React, Flow, ES6, styled-components, SVG,
+          JSON, markdown-to-jsx, Invision
         </p>
         <p><strong>Results:</strong></p>
         <ul>
