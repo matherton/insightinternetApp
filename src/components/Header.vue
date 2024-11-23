@@ -12,7 +12,7 @@ defineProps({
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img src="/src/assets/globe-icon.gif" alt="globe" />
           <h1 class="font-semibold text-xl tracking-tight pl-2">
-            Insight Internet
+            InsightInternet
           </h1>
           <sub class="slogan">Invent, Implement, React</sub>
         </div>
