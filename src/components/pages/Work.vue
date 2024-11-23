@@ -16,13 +16,24 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
     </p>
     <strong class="flex flex-col items-center work-header">Current Work</strong>
     <CurrentWork
+      imgName="mash-logo.jpg"
+      alt="The Mash Tun"
+      imgClass="pie-logo"
+      client="The Mash Tun Pub"
+      industry="Food & Beverages"
+      duration="ongoing"
+      description="Insight Internet developed a performance-optimised React Menu Application for The Mash Tun pub. As part of our comprehensive service, we coordinated the professional food photography session. The owner is currently curating the final selection of images to ensure the highest quality representation of their menu items."
+      tech="React, Node.js, ES6, GIMP"
+      hrefAddress="https://matherton.github.io/mash-tun/"
+    />
+    <CurrentWork
       imgName="typing.gif"
       alt="in progress"
-      imgClass="ewp-logo mb-4"
+      imgClass="ewp-logo"
       client="Paul Dalrymple Art"
       industry="Creative Arts"
       duration="ongoing"
-      description="InsightInternet is currently developing a React web application for Paul Dalrymple Art. The project is in progress, and we have presented various options for showcasing his artwork on the homepage. The application will be finalized and launched once Paul provides a UX design for the remaining pages and supplies his artwork files to replace the placeholder images currently in use."
+      description="InsightInternet is currently developing a React web application for Paul Dalrymple Art. The project is in progress, and we have presented various options for showcasing his artwartworkork on different pages. The application will be finalised and launched once Paul choose how he wants to display his work and provides remaining artwork."
       tech="React, Node.js, Tailwind, ES6"
       hrefAddress="https://matherton.github.io/PauldalrympleArt/"
     />
@@ -33,7 +44,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       client="Harkness Pies"
       industry="Food & Beverages"
       duration="ongoing"
-      description="Insight Internet created a React Web Application for Harkness Pies. The system features a user-friendly interface for customers to view products and find out more about its ethos and the owner, Patrick Harkness. The project is ongoing, with Patrick currently undergoing a shop redesign. Once complete, he will supply new photos and content to update the web app, which was initially developed from a UX design he supplied."
+      description="InsightInternet created a React Web Application for Harkness Pies. The system features a user-friendly interface for customers to view products and find out more about its ethos and the owner, Patrick Harkness. The project is ongoing, with Patrick currently undergoing a shop redesign. Once complete, he will supply new photos and content to update the web app, which was initially developed from a UX design he supplied."
       tech="React, Tailwind, Node.js, ES6, UX Design"
       hrefAddress="https://matherton.github.io/harkness-pies/"
     />
