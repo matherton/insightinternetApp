@@ -109,7 +109,7 @@
       </div>
 
       <span class="text-xs text-white mt-8">
-        &copy; 2024. InsightInternet. All rights reserved.
+        &copy; 2025. InsightInternet. All rights reserved.
       </span>
     </div>
   </footer>
