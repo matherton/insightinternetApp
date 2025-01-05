@@ -1,5 +1,6 @@
 <script setup>
 import BulletListVue from "./utilities/BulletList.vue";
+import Thought from "./Thought.vue";
 import reactLogo from "../assets/react-icon.png";
 import viteLogo from "/vite.svg";
 </script>
@@ -22,6 +23,7 @@ import viteLogo from "/vite.svg";
       <p>{{ copy1 }}</p>
     </section>
     <section v-if="imgName" class="positionMe">
+      <Thought />
       <img :src="`./${imgName}`" class="mx-auto" alt="" type="image" />
     </section>
 
