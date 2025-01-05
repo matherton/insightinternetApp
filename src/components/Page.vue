@@ -23,7 +23,7 @@ import viteLogo from "/vite.svg";
       <p>{{ copy1 }}</p>
     </section>
     <section v-if="imgName" class="positionMe">
-      <Thought />
+      <Thought class="md-hidden" />
       <img :src="`./${imgName}`" class="mx-auto" alt="" type="image" />
     </section>
 

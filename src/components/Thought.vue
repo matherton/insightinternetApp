@@ -10,6 +10,7 @@ export default {
 </script>
 <style lang="css">
 .oval-thought-border {
+  margin: 0 2rem;
   position: relative;
   padding: 2rem 2rem;
   background: white;
@@ -27,7 +28,7 @@ export default {
   border-radius: 50px;
   width: 40px;
   height: 40px;
-  bottom: -60px;
+  bottom: -55px;
   right: 105px;
   background: white;
 }
@@ -38,9 +39,8 @@ export default {
   border-radius: 25px;
   width: 25px;
   height: 25px;
-  /* z-index: 10; */
   position: absolute;
-  bottom: -90px;
+  bottom: -75px;
   right: 145px;
   display: block;
 }
