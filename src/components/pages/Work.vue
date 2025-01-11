@@ -21,7 +21,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       imgClass="pie-logo"
       client="The Mash Tun Pub"
       industry="Food & Beverages"
-      duration="ongoing"
+      duration="ongoing: first version launched at https://edinburghmashtun.co.uk/"
       description="Insight Internet developed a performance-optimised React Menu Application for The Mash Tun pub. As part of our comprehensive service, we coordinated the professional food photography session. The owner is currently curating the final selection of images to ensure the highest quality representation of their menu items."
       tech="React, Node.js, ES6, GIMP"
       hrefAddress="https://matherton.github.io/mash-tun/"
