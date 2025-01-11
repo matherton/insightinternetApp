@@ -23,7 +23,7 @@ import viteLogo from "/vite.svg";
       <p>{{ copy1 }}</p>
     </section>
     <section v-if="imgName" class="positionMe">
-      <Thought class="md-hidden" />
+      <Thought />
       <img :src="`./${imgName}`" class="mx-auto" alt="" type="image" />
     </section>
 
@@ -58,9 +58,7 @@ import viteLogo from "/vite.svg";
       <strong>{{ subTitle4 }}</strong>
       <p>{{ copy4 }}</p>
 
-      <div>
-        <BulletListVue />
-      </div>
+      <div><BulletListVue /></div>
     </section>
 
     <section v-else>
@@ -73,6 +71,7 @@ import viteLogo from "/vite.svg";
     <section v-if="!subTitleList">
       <strong>{{ subTitle4 }}</strong>
       <p>{{ copy4 }}</p>
+
       <strong>{{ subTitle5 }}</strong>
       <p>{{ copy5 }}</p>
     </section>

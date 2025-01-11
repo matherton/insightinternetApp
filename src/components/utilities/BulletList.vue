@@ -5,7 +5,7 @@ const items = ref(["Innovation", "Quality", "Collaboration", "Integrity"]);
 </script>
 
 <template>
-  <ul>
+  <ul style="margin-bottom: 1.5rem">
     <li v-for="(item, index) in items" :key="index">{{ item }}</li>
   </ul>
 </template>
