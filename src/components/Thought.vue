@@ -57,7 +57,7 @@ export default {
   height: 50px;
   background: #66ccff;
   border-radius: 50%;
-  border: 0.5rem solid var(--primary-navy);
+  border: 0.25rem solid var(--primary-navy);
 }
 
 .thought-bubble.two {
@@ -65,6 +65,6 @@ export default {
   top: 2rem;
   height: 25px;
   width: 25px;
-  border: 0.25rem solid var(--primary-navy);
+  border: 0.15rem solid var(--primary-navy);
 }
 </style>
