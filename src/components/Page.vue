@@ -24,7 +24,13 @@ import viteLogo from "/vite.svg";
     </section>
     <section v-if="imgName" class="positionMe">
       <Thought />
-      <img :src="`./${imgName}`" class="mx-auto" alt="" type="image" />
+      <img
+        :src="`./${imgName}`"
+        class="mx-auto"
+        alt=""
+        type="image"
+        style="z-index: 2; position: relative"
+      />
     </section>
 
     <section v-if="img2ndCol">

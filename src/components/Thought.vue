@@ -60,11 +60,28 @@ export default {
   border: 0.25rem solid var(--primary-navy);
 }
 
+.thought-bubble::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #66ccff;
+  border-radius: 50%;
+  border: 0.25rem solid var(--primary-navy);
+  position: relative;
+  top: 3.5rem;
+  left: 2rem;
+  z-index: 0;
+}
+
 .thought-bubble.two {
-  left: 7rem;
-  top: 2rem;
+  left: 8rem;
+  top: 3rem;
   height: 25px;
   width: 25px;
-  border: 0.15rem solid var(--primary-navy);
+}
+
+.thought-bubble.two::before {
+  top: 1rem;
 }
 </style>
