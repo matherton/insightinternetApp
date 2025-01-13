@@ -26,7 +26,6 @@ const thoughtArray = [
     {{ thoughtArray[Math.floor(Math.random() * thoughtArray.length)].thought }}
   </div>
   <div class="thought-bubble"></div>
-  <div class="thought-bubble two"></div>
 </template>
 <script>
 export default {
@@ -74,14 +73,17 @@ export default {
   z-index: 0;
 }
 
-.thought-bubble.two {
-  left: 8rem;
-  top: 3rem;
-  height: 25px;
-  width: 25px;
-}
-
-.thought-bubble.two::before {
-  top: 1rem;
+.thought-bubble::after {
+  content: "";
+  display: block;
+  width: 12.5px;
+  height: 12.5px;
+  background: #66ccff;
+  border-radius: 50%;
+  border: 0.15rem solid var(--primary-navy);
+  position: relative;
+  top: 4rem;
+  left: 3.5rem;
+  z-index: 0;
 }
 </style>
