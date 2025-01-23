@@ -44,7 +44,7 @@ export default {
     var(--gradient) 0 100%/36% 68%, var(--gradient) 27% 18%/26% 40%,
     linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
   background-color: var(--primary-navy); /* added -color suffix for clarity */
-  padding: 2rem 1rem 0rem;
+  padding: 3rem 2.75rem;
   text-align: center;
 }
 
