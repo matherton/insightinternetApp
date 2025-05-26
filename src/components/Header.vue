@@ -29,13 +29,13 @@ defineProps({
           <router-link
             to="/insightinternetApp/services"
             class="button-primary sm:px-4 p-1 lg:py-2 mr-2"
-            >Services</router-link
+            >Solutions</router-link
           >
-          <router-link
+          <!-- <router-link
             to="/insightinternetApp/about"
             class="button-primary sm:px-4 p-1 lg:py-2 mr-2"
             >Why us</router-link
-          >
+          > -->
           <router-link
             to="/insightinternetApp/work"
             class="button-primary sm:px-4 p-1 lg:py-2 mr-2"
