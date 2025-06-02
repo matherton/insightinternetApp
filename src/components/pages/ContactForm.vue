@@ -95,16 +95,6 @@ const router = useRouter();
         Send
       </button>
     </form>
-
-    <h2 class="text-2xl text-gray-500 font-semibold mb-2 mt-2">
-      Additional Information:
-    </h2>
-    <p>
-      "Or reach out to me directly at
-      <a href="mailto:mark@insightinternet.co.uk" class="email-link"
-        >mark@insightinternet.co.uk</a
-      >."
-    </p>
   </main>
 </template>
 
