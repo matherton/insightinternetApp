@@ -45,6 +45,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+.logo.react {
+  height: auto;
+  max-height: 9em;
+}
+
 .logo.vite {
   margin: 0 auto;
 }
