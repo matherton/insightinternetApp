@@ -3,6 +3,7 @@ import BulletListVue from "./utilities/BulletList.vue";
 import Thought from "./Thought.vue";
 import reactLogo from "../assets/react-icon.png";
 import viteLogo from "/vite.svg";
+import vueLogo from "../assets/vue-logo.svg";
 </script>
 <!-- TODO put all images in the public folder in order for them to available in dist folder like globe-icon.gif -->
 <template>
@@ -43,9 +44,12 @@ import viteLogo from "/vite.svg";
     </section>
 
     <section v-if="img3rdCol">
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-3">
         <a href="https://vitejs.dev" target="_blank">
           <img :src="`${viteLogo}`" className="logo vite" alt="Vite logo" />
+        </a>
+        <a href="https://vuejs.org" target="_blank">
+          <img :src="`${vueLogo}`" className="logo vue" alt="Vue logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img :src="`${reactLogo}`" className="logo react" alt="React logo" />
