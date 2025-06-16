@@ -51,7 +51,7 @@ import vueLogo from "../assets/vue-logo.svg";
         <a href="https://vuejs.org" target="_blank">
           <img :src="`${vueLogo}`" className="logo vue" alt="Vue logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" class="sm-2 mt-2">
           <img :src="`${reactLogo}`" className="logo react" alt="React logo" />
         </a>
       </div>
