@@ -12,7 +12,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
     <p class="work-intro">
       Explore some of the projects we have successfully completed for our
       clients. Each project highlights our commitment to excellence and our
-      expertise in delivering top-notch React applications.
+      expertise in delivering top-notch Vue and React applications.
     </p>
     <strong class="flex flex-col items-center work-header">Current Work</strong>
     <CurrentWork
@@ -22,7 +22,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       client="The Mash Tun Pub"
       industry="Food & Beverages"
       duration="ongoing: first version launched at https://edinburghmashtun.co.uk/"
-      description="Insight Internet developed a performance-optimised React Menu Application for The Mash Tun pub. As part of our comprehensive service, we coordinated the professional food photography session. The owner is currently curating the final selection of images to ensure the highest quality representation of their menu items."
+      description="Insight Internet developed a performance-optimised Menu Application for The Mash Tun pub. As part of our comprehensive service, we coordinated the professional food photography session. The owner is currently curating the final selection of images to ensure the highest quality representation of their menu items."
       tech="React, Node.js, ES6, GIMP"
       hrefAddress="https://matherton.github.io/mash-tun/"
     />
@@ -33,7 +33,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       client="Paul Dalrymple Art"
       industry="Creative Arts"
       duration="ongoing"
-      description="InsightInternet is currently developing a React web application for Paul Dalrymple Art. The project is in progress, and we have presented various options for showcasing his artwartworkork on different pages. The application will be finalised and launched once Paul choose how he wants to display his work and provides remaining artwork."
+      description="InsightInternet is currently developing a web application for Paul Dalrymple Art. The project is in progress, and we have presented various options for showcasing his artwartworkork on different pages. The application will be finalised and launched once Paul choose how he wants to display his work and provides remaining artwork."
       tech="React, Node.js, Tailwind, ES6"
       hrefAddress="https://matherton.github.io/PauldalrympleArt/"
     />
