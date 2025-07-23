@@ -6,7 +6,7 @@ import Page from "../Page.vue";
   <Page
     title1="Services"
     subTitle1="Custom Application Development:"
-    copy1="We offer a range of services to help you achieve your goals. From custom applications to web development, tailored to meet your specific needs. Contact us today to learn more about our services."
+    copy1="We offer a range of services to help you achieve your goals. From custom applications to web development, tailored to meet your specific needs. <a href='/insightinternetApp/contact'>Contact us</a> today to learn more about our services."
     img3rdCol
     subTitle2="Web Application Modernization:"
     copy2="Upgrade your existing web applications with modern technology to improve performance and user experience."

@@ -21,7 +21,7 @@ import vueLogo from "../assets/vue-logo.svg";
           {{ btnText }}
         </button>
       </router-link>
-      <p>{{ copy1 }}</p>
+      <p v-if="copy1" v-html="copy1"></p>
     </section>
     <section v-if="imgName" class="positionMe">
       <Thought />
