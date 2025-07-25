@@ -23,7 +23,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       industry="Food & Beverages"
       duration="ongoing"
       description="Developing a new application for The Mash Tun Pub. The owner is currently curating the final selection of images to ensure the highest quality representation of the pub."
-      tech="Vue, DaisyUI, Node.js, ES6, GIMP"
+      tech="Vue, daisyUI, Node.js, ES6, GIMP"
       hrefAddress="https://matherton.github.io/mash-tun-app/"
     />
     <CurrentWork
@@ -38,7 +38,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       hrefAddress="https://matherton.github.io/mash-tun/"
     />
     <CurrentWork
-      imgName="typing.gif"
+      imgName="coding.svg"
       alt="in progress"
       imgClass="ewp-logo"
       client="Paul Dalrymple Art"
@@ -54,7 +54,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       imgClass="pie-logo"
       client="Harkness Pies"
       industry="Food & Beverages"
-      duration="ongoing"
+      duration="on hold"
       description="InsightInternet created a React Web Application for Harkness Pies. The system features a user-friendly interface for customers to view products and find out more about its ethos and the owner, Patrick Harkness. The project is ongoing, with Patrick currently undergoing a shop redesign. Once complete, he will supply new photos and content to update the web app, which was initially developed from a UX design he supplied."
       tech="React, Tailwind, Node.js, ES6, UX Design"
       hrefAddress="https://matherton.github.io/harkness-pies/"
@@ -66,7 +66,7 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
       imgClass="ewp-logo"
       client="Edinburgh Wheels Project"
       industry="Charity"
-      duration="onhold"
+      duration="on hold"
       description="InsightInternet volunteered to help the Edinburgh Wheels Project setup their new skate facility in Edinburgh. I also created a React App holding page to be updated with content once the skate facility is ready."
       tech="React, Node.js"
       hrefAddress="https://matherton.github.io/wheels-project/"

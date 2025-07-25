@@ -7,7 +7,7 @@ import Page from "../Page.vue";
     title1="Why Choose Us"
     subTitle1="Expertise:"
     copy1="Highly skilled React development with a wealth of experience in building dynamic and responsive web applications. We offer bespoke solutions for startups and small businesses tailored to their specific needs without the limitations and cost of industry leaders such as Wix and Squarespace."
-    img2ndCol="typing.gif"
+    img2ndCol="coding.svg"
     subTitle2="Collaboration:"
     copy2="We work closely with our clients to understand their goals and deliver solutions that exceed expectations."
     subTitle3="Innovation:"
