@@ -10,9 +10,9 @@ import lloydsLogo from "/src/assets/lloyds-bank-logo-long.png";
 <template>
   <div class="wrapper">
     <p class="work-intro">
-      Explore some of the projects we have successfully completed for our
-      clients. Each project highlights our commitment to excellence and our
-      expertise in delivering top-notch Vue and React applications.
+      Explore some of the projects we have created for clients. Each project
+      highlights our commitment to excellence and our expertise in delivering
+      top-notch Vue and React applications.
     </p>
     <strong class="flex flex-col items-center work-header">Current Work</strong>
     <CurrentWork
