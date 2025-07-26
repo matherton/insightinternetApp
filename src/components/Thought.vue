@@ -45,7 +45,19 @@ onUnmounted(() => {
 </script>
 <template lang="">
   <div class="cloud">
-    {{ currentThought }}
+    <transition
+      enter-active-class="transition-opacity duration-700"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-100"
+      leave-active-class="transition-opacity duration-300"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+      mode="out-in"
+    >
+      <span :key="currentThought" class="block w-full">
+        {{ currentThought }}
+      </span>
+    </transition>
   </div>
   <div class="thought-bubble"></div>
 </template>
