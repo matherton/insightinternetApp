@@ -50,8 +50,9 @@
   max-height: 9em;
 }
 
-.logo.vite {
+.logo.standard {
   margin: 0 auto;
+  max-width: 10rem;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

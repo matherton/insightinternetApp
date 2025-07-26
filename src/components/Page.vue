@@ -35,21 +35,44 @@ import vueLogo from "../assets/vue-logo.svg";
     </section>
 
     <section v-if="img2ndCol">
-      <img
-        :src="`./${img2ndCol}`"
-        class="mx-auto max-w-40"
-        alt=""
-        type="image"
-      />
+      <div class="grid grid-cols-3">
+        <img
+          :src="`./${img2ndCol}`"
+          class="mx-auto"
+          style="max-width: 8rem"
+          alt=""
+          type="image"
+        />
+        <a target="_blank" href="https://daisyui.com" rel="noopener noreferrer">
+          <img
+            :src="`https://img.daisyui.com/images/daisyui/mark-rotating.svg`"
+            class="logo standard"
+            alt="daisyUI logo"
+            type="image"
+        /></a>
+        <a
+          target="_blank"
+          class="sm-2 mt-2"
+          href="https://tailwindcss.com"
+          rel="noopener noreferrer"
+        >
+          <img
+            :src="`./tailwindcss-mark.svg`"
+            class="logo react"
+            style="max-width: 9rem"
+            alt="tailwind logo"
+            type="image"
+        /></a>
+      </div>
     </section>
 
     <section v-if="img3rdCol">
       <div class="grid grid-cols-3">
         <a href="https://vitejs.dev" target="_blank">
-          <img :src="`${viteLogo}`" className="logo vite" alt="Vite logo" />
+          <img :src="`${viteLogo}`" className="logo standard" alt="Vite logo" />
         </a>
         <a href="https://vuejs.org" target="_blank">
-          <img :src="`${vueLogo}`" className="logo vue" alt="Vue logo" />
+          <img :src="`${vueLogo}`" className="logo standard" alt="Vue logo" />
         </a>
         <a href="https://react.dev" target="_blank" class="sm-2 mt-2">
           <img :src="`${reactLogo}`" className="logo react" alt="React logo" />
