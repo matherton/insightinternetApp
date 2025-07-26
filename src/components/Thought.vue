@@ -1,4 +1,6 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from "vue";
+
 const thoughtArray = [
   {
     thought:
@@ -20,10 +22,30 @@ const thoughtArray = [
   { thought: "Full service solution: Expert guidance + free deployment" },
   { thought: "Your partner in growth: Training, solutions & free hosting" },
 ];
+
+const currentThought = ref(thoughtArray[0].thought);
+
+function updateThought() {
+  let idx;
+  do {
+    idx = Math.floor(Math.random() * thoughtArray.length);
+  } while (thoughtArray[idx].thought === currentThought.value);
+  currentThought.value = thoughtArray[idx].thought;
+}
+
+let intervalId;
+
+onMounted(() => {
+  intervalId = setInterval(updateThought, 5000);
+});
+
+onUnmounted(() => {
+  clearInterval(intervalId);
+});
 </script>
 <template lang="">
   <div class="cloud">
-    {{ thoughtArray[Math.floor(Math.random() * thoughtArray.length)].thought }}
+    {{ currentThought }}
   </div>
   <div class="thought-bubble"></div>
 </template>
