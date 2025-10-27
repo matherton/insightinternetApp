@@ -8,7 +8,7 @@ const thoughtArray = [
   },
   {
     thought:
-      "Complete digital package: Photography, development, training & free hosting",
+      "Complete digital package: Photography, development, training & hosting",
   },
   {
     thought:
@@ -16,11 +16,14 @@ const thoughtArray = [
   },
   {
     thought:
-      "Complete digital package: Photography, development, training & free hosting",
+      "Complete digital package: Photography, development, training & hosting",
   },
-  { thought: "We grow together: Training, consulting & free hosting" },
-  { thought: "Full service solution: Expert guidance + free deployment" },
-  { thought: "Your partner in growth: Training, solutions & free hosting" },
+  { thought: "We grow together: Training, consulting & hosting" },
+  { thought: "Full service solution: Expert guidance + deployment" },
+  {
+    thought:
+      "Your partner in growth: Training, solutions, deployment & hosting",
+  },
 ];
 
 const currentThought = ref(thoughtArray[0].thought);
