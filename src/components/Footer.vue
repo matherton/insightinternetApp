@@ -102,7 +102,7 @@
       </div>
 
       <span class="text-xs text-white mt-8">
-        &copy; 2025. InsightInternet. All rights reserved.
+        &copy; {{ currentYear }}. InsightInternet. All rights reserved.
       </span>
     </div>
   </footer>
@@ -110,6 +110,14 @@
 
 <script>
 export default {
+  setup() {
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    return {
+      currentYear,
+    };
+  },
   name: "Footer",
   methods: {
     scrollToTop() {
