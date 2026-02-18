@@ -26,7 +26,7 @@ import vueLogo from "../assets/vue-logo.svg";
     <section v-if="imgName" class="positionMe">
       <Thought />
       <img
-        :src="`./${imgName}`"
+        :src="`${imgName}`"
         class="mx-auto"
         alt=""
         type="image"
@@ -36,13 +36,14 @@ import vueLogo from "../assets/vue-logo.svg";
 
     <section v-if="img2ndCol">
       <div class="grid grid-cols-3">
-        <img
-          :src="`./${img2ndCol}`"
-          class="mx-auto"
-          style="max-width: 8rem"
-          alt=""
-          type="image"
-        />
+        <a href="https://vuetifyjs.com/en/" target="_blank"
+          ><img
+            :src="`${img2ndCol}`"
+            class="mx-auto standard logo"
+            style="min-width: 8rem"
+            alt=""
+            type="image"
+        /></a>
         <a target="_blank" href="https://daisyui.com" rel="noopener noreferrer">
           <img
             :src="`https://img.daisyui.com/images/daisyui/mark-rotating.svg`"
@@ -58,8 +59,8 @@ import vueLogo from "../assets/vue-logo.svg";
         >
           <img
             :src="`./tailwindcss-mark.svg`"
-            class="logo react"
-            style="max-width: 9rem"
+            class="standard"
+            style="max-width: 8rem; margin-top: 1rem"
             alt="tailwind logo"
             type="image"
         /></a>
